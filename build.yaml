@@ -26,7 +26,3 @@ include:
     shield: corne_left
   - board: nrfmicro_13
     shield: corne_right
-  - board: nrfmicro_14
-    shield: corne_left
-  - board: nrfmicro_14
-    shield: corne_right
