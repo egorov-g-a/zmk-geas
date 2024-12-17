@@ -23,7 +23,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <13 14 15 16 0 1 2 3 4 5 15 12 13 14 15 16 17 27 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
         };
 
@@ -37,7 +37,7 @@
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <19 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 30 31 32 33 39 40 41>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
     };
 
@@ -45,21 +45,23 @@
         compatible = "zmk,keymap";
 
         base {
+            display-name="Base";
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |  TAB       |  B              |  L              |  D                |  W                |  Z          |=|  SQT          |  F                |  O                 |  U               |  J               |  \            |
+// |  TAB       |  B              |  L              |  D                |  W                |  Z          |=|  J            |  F                |  O                 |  U               |  SQT             |  \            |
 // |  LCTRL     |  HRM LGUI/N     |  HRM LALT/R     |  HRM LSHIFT/T     |  HRM LCTRL/S      |  G          |=|  Y            |  HRM RCTRL/H      |  HRM RSHIFT/A      |  HRM RALT/E      |  HRM RGUI/I      |  ;            |
-// |  LSHFT     |  Q              |  X              |  M                |  C                |  V          |=|  K            |  P                |  .                 |  ,               |  /               |  DEL          |
+// |  LSHFT     |  Q              |  X              |  M                |  C                |  V          |=|  K            |  P                |  ,                 |  .               |  /               |  DEL          |
 //                                                  |  ESC              |  LWR              |  SPC        |=|  BACKSPACE    |  RSE              | ENTER              |
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp TAB     &kp B             &kp L             &kp D               &kp W               &kp Z           &kp SQT         &kp F               &kp O                &kp U              &kp J              &kp BACKSLASH
+    &kp TAB     &kp B             &kp L             &kp D               &kp W               &kp Z           &kp J           &kp F               &kp O                &kp U              &kp SQT            &kp BACKSLASH
     &kp LCTRL   &left_HRM LGUI N  &left_HRM LALT R  &left_HRM LSHIFT T  &left_HRM LCTRL S   &kp G           &kp Y           &right_HRM RCTRL H  &right_HRM RSHIFT A  &right_HRM RALT E  &right_HRM RGUI I  &kp SEMICOLON
-    &kp LSHFT   &kp Q             &kp X             &kp M               &kp C               &kp V           &kp K           &kp P               &kp DOT              &kp COMMA          &kp FSLH           &kp DEL
-                                                    &kp ESC             &mo LOWER               &kp SPACE       &kp BACKSPACE   &mo RAISER               &kp ENTER
+    &kp LSHFT   &kp Q             &kp X             &kp M               &kp C               &kp V           &kp K           &kp P               &kp COMMA            &kp DOT            &kp FSLH           &kp DEL
+                                                    &kp ESC             &mo LOWER           &kp SPACE       &kp BACKSPACE   &mo RAISER          &kp ENTER
             >;
         };
 
         lower {
+            display-name="Lower";
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |  TAB       |  BT_CLR         |  1              |  2                |  3                |  CAPS       |=|               |  END              |  PAGE_DOWN         |  PAGE UP         |  HOME            |  BACKSPACE    |
 // |  LCTRL     |  BT_SEL 0       |  4              |  5                |  6                |             |=|               |  LFT              |  DWN               |  UP              |  RGT             |               |
@@ -75,6 +77,7 @@
         };
 
         raiser {
+            display-name="Raiser";
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |  TAB       |  `              |  !              |  @                |  #                |             |=|               |                   |  (                 |  )               |                  |  BACKSPACE    |
 // |  LCTRL     |  ~              |  $              |  %                |  ^                |             |=|  -            |  =                |  [                 |  ]               |  \               |               |
