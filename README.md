@@ -5,4 +5,5 @@
 - keymap editor <https://nickcoutsos.github.io/keymap-editor/>
 - zmk firmware **keycodes** <https://zmk.dev/docs/keymaps/list-of-keycodes>
 - zmk helper <https://github.com/urob/zmk-helpers>
+- urob's helper **example** <https://github.com/urob/zmk-config>
 - **russian** letters by frequency <https://dpva.ru/Guide/GuideUnitsAlphabets/Alphabets/FrequencyRuLetters/>
