@@ -8,6 +8,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      # remote: urob    # try this insted zmkfirmware if build error
       revision: main
       import: app/west.yml
     - name: zmk-helpers
