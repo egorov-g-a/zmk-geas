@@ -9,7 +9,8 @@ manifest:
     - name: zmk
       # remote: zmkfirmware
       remote: urob # try this insted zmkfirmware if build error
-      revision: main
+      # revision: main
+      revision: v0.1+mouse
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
@@ -22,7 +23,8 @@ manifest:
       revision: main
     - name: zmk-leader-key
       remote: urob
-      revision: main
+      # revision: main
+      revision: v0.1+locality
     - name: zmk-tri-state
       remote: urob
       revision: main
