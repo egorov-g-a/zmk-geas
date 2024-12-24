@@ -13,7 +13,7 @@ manifest:
       # remote: zmkfirmware
       remote: urob # try this insted zmkfirmware if build error
       revision: main
-      # revision: v0.1+mouse
+      # revision: v0.1+mouse # not patched??? build behavior issue with zmk-leader-key
       import: app/west.yml
     - name: zmk-helpers
       remote: urob

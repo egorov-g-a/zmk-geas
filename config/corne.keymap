@@ -204,19 +204,32 @@ ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr RSHFT C_VOL_DN
 
+// tap: macro Win+SPACE &tog RUS | lshft/rshft + tap: toggle RUS layour 
+ZMK_MOD_MORPH(rus_toggle,
+    bindings = <&lang_macro>, <&tog RUS>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+// Macro for Russian layer toggle (my DICTOR version layout)
+// Win+SPACE &tog RUS
+ZMK_MACRO(lang_macro,
+    wait-ms = <2>;
+    tap-ms = <5>;
+    bindings = <&kp LG(SPACE) &tog RUS>;
+)
+
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS
 
 ZMK_LAYER(def,
 //╭───────────┬─────────────┬─────────────┬───────────────┬──────────────┬─────────────╮╭─────────────┬──────────────┬───────────────┬─────────────┬──────────────┬───────────╮
-    &tog RUS    &kp B         &kp L         &kp D           &kp W          &kp Z          &kp J         &kp F          &kp O           &kp U         &kp SQT        &kp BSLH
+    &rus_toggle &kp B         &kp L         &kp D           &kp W          &kp Z          &kp J         &kp F          &kp O           &kp U         &kp SQT        &kp BSLH
 //├───────────┼─────────────┼─────────────┼───────────────┼──────────────┼─────────────┤├─────────────┼──────────────┼───────────────┼─────────────┼──────────────┼───────────┤
     &kp TAB     &hml LGUI N   &hml LALT R   &hml LSHFT T    &hml LCTRL S   &kp G          &kp Y         &hmr RCTRL H   &hmr RSHFT A    &hmr RALT E   &hmr RGUI I    &kp SEMI
 //├───────────┼─────────────┼─────────────┼───────────────┼──────────────┼─────────────┤├─────────────┼──────────────┼───────────────┼─────────────┼──────────────┼───────────┤
     &kp LSHFT   &kp Q         &kp X         &kp M           &kp C          &kp V          &kp K         &kp P          &comma_morph    &dot_morph    &qexcl         &kp ESC
 //╰───────────┴─────────────┴─────────────┼───────────────┼──────────────┼─────────────┤├─────────────┼──────────────┼───────────────┼─────────────┴──────────────┴───────────╯
-                                            &kp BSPC        &lt_spc NAV 0  &lt FN RET     SMART_NUM     &smart_shft    &smart_mouse
+                                            &bs_del         &lt_spc NAV 0  &lt FN RET     SMART_NUM     &smart_shft    &smart_mouse
 //                                        ╰───────────────┴──────────────┴─────────────╯╰─────────────┴──────────────┴───────────────╯
 )
 
