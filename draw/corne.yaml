@@ -1,0 +1,410 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layers:
+  def:
+  - {t: '&lang_macro', s: rus}
+  - B
+  - L
+  - D
+  - W
+  - Z
+  - J
+  - F
+  - O
+  - U
+  - ''''
+  - \
+  - ⇥
+  - {t: N, h: Gui}
+  - {t: R, h: Alt}
+  - {t: T, h: LSHFT}
+  - {t: S, h: Ctrl}
+  - G
+  - Y
+  - {t: H, h: Ctrl}
+  - {t: A, h: RSHFT}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - ;
+  - LSHFT
+  - Q
+  - X
+  - M
+  - C
+  - V
+  - K
+  - P
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - $$mdi:location-exit$$
+  - {t: BSPC, s: ⌦}
+  - {t: ␣, h: nav, s: '&dot_spc'}
+  - {t: ⮐, h: fn}
+  - {t: '&num_dance', h: num}
+  - {t: LSHFT, h: sticky, s: CAPSWORD}
+  - '&smart_mouse'
+  rus:
+  - {type: trans}
+  - A
+  - M
+  - '['
+  - Z
+  - S
+  - P
+  - D
+  - R
+  - L
+  - X
+  - O
+  - {type: trans}
+  - {t: E, h: Gui}
+  - {t: B, h: Alt}
+  - {t: T, h: LSHFT}
+  - {t: J, h: Ctrl}
+  - F
+  - K
+  - {t: Y, h: Ctrl}
+  - {t: N, h: RSHFT}
+  - {t: C, h: Alt}
+  - {t: H, h: Gui}
+  - I
+  - {type: trans}
+  - Q
+  - ']'
+  - ''''
+  - .
+  - W
+  - ','
+  - V
+  - G
+  - U
+  - ;
+  - '`'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  nav:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ⇧+⇥
+  - '&swapper'
+  - {type: trans}
+  - PG UP
+  - {t: BSPC, h: ^+BSPC}
+  - {t: '$$mdi:arrow-up$$', h: ^+HOME}
+  - {t: ⌦, h: ^+⌦}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Gui, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {type: trans}
+  - PG DN
+  - {t: '$$mdi:arrow-left$$', h: HOME}
+  - {t: '$$mdi:arrow-down$$', h: ^+END}
+  - {t: '$$mdi:arrow-right$$', h: END}
+  - ⮐
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - INS
+  - ⇥
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - CANCEL
+  - {type: trans}
+  fn:
+  - {type: trans}
+  - F12
+  - F7
+  - F8
+  - F9
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:skip-previous$$
+  - VOL UP
+  - $$mdi:skip-next$$
+  - $$mdi:volume-off$$
+  - {type: trans}
+  - {type: trans}
+  - {t: F11, h: Gui}
+  - {t: F4, h: Alt}
+  - {t: F5, h: LSHFT}
+  - {t: F6, h: Ctrl}
+  - {type: trans}
+  - {type: trans}
+  - {t: '⌘+^+$$mdi:arrow-left$$', h: Ctrl}
+  - {t: VOL DN, h: RSHFT}
+  - {t: '⌘+^+$$mdi:arrow-right$$', h: Alt}
+  - PP
+  - {type: trans}
+  - {type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
+  - {type: trans}
+  - ⌘+^+⇧+A
+  - ⌘+^+⇧+Q
+  - ⎇+`
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  num:
+  - {type: trans}
+  - {type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: '0', h: Gui, s: )}
+  - {t: '4', h: Alt, s: $}
+  - {t: '5', h: LSHFT, s: '%'}
+  - {t: '6', h: Ctrl, s: ^}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  sys:
+  - BT CLR
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&bootloader'
+  - '&bootloader'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&sys_reset'
+  - '&sys_reset'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  mouse:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&msc SCRL_UP'
+  - PG UP
+  - '&mmv MOVE_UP'
+  - PG DN
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&msc SCRL_DOWN'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+combos:
+- p: [2, 3]
+  k: $$mdi:location-exit$$
+  l: [def, nav, num]
+- p: [3, 4]
+  k: RETURN
+  l: [def, nav, num]
+- p: [2, 4]
+  k: '&smart_mouse'
+  l: [def, nav, num]
+- p: [14, 15]
+  k: '&hml LS(LALT)TAB'
+  l: [def, nav, num]
+- p: [15, 16]
+  k: {t: '&leader', h: ⇧+Ctrl}
+  l: [def, nav, num]
+- p: [14, 15, 16]
+  k: {t: '&leader_sft', h: ⇧+^+Alt}
+  l: [def, nav, num]
+- p: [26, 28]
+  k: ^+X
+  l: [def, nav, num]
+  a: bottom
+- p: [26, 27]
+  k: ^+INS
+  l: [def, nav, num]
+- p: [27, 28]
+  k: ⇧+INS
+  l: [def, nav, num]
+- p: [7, 8]
+  k: BSPC
+  l: [def, nav, num]
+- p: [8, 9]
+  k: ⌦
+  l: [def, nav, num]
+- p: [19, 20]
+  k: {t: (, h: ⇧+Ctrl, s: <}
+  l: [def, num]
+- p: [20, 21]
+  k: {t: ), h: ⇧+Alt, s: '>'}
+  l: [def, num]
+- p: [19, 20]
+  k: <
+  l: [nav]
+- p: [20, 21]
+  k: '>'
+  l: [nav]
+- p: [31, 32]
+  k: '['
+  l: [def, num]
+- p: [32, 33]
+  k: ']'
+  l: [def, num]
+- p: [31, 32]
+  k: '{'
+  l: [nav]
+- p: [32, 33]
+  k: '}'
+  l: [nav]
+- p: [2, 14]
+  k: '@'
+  l: [def, nav, num]
+- p: [3, 15]
+  k: '#'
+  l: [def, nav, num]
+- p: [4, 16]
+  k: $
+  l: [def, nav, num]
+- p: [5, 17]
+  k: '%'
+  l: [def, nav, num]
+- p: [14, 26]
+  k: '`'
+  l: [def, nav, num]
+- p: [15, 27]
+  k: \
+  l: [def, nav, num]
+- p: [16, 28]
+  k: '='
+  l: [def, nav, num]
+- p: [17, 29]
+  k: '~'
+  l: [def, nav, num]
+- p: [6, 18]
+  k: ^
+  l: [def, nav, num]
+- p: [7, 19]
+  k: +
+  l: [def, nav, num]
+- p: [8, 20]
+  k: '*'
+  l: [def, nav, num]
+- p: [9, 21]
+  k: '&'
+  l: [def, nav, num]
+- p: [18, 30]
+  k: _
+  l: [def, nav, num]
+- p: [19, 31]
+  k: _
+  l: [def, nav, num]
+- p: [20, 32]
+  k: /
+  l: [def, nav, num]
+- p: [21, 33]
+  k: '|'
+  l: [def, nav, num]
