@@ -1,0 +1,424 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layers:
+  Base:
+  - - {t: ⛭RUS, s: RUS}
+    - B
+    - L
+    - D
+    - W
+    - Z
+    - J
+    - F
+    - O
+    - U
+    - ''''
+    - \
+  - - ⭲
+    - {t: N, h: Gui}
+    - {t: R, h: Alt}
+    - {t: T, h: Shift}
+    - {t: S, h: Ctrl}
+    - G
+    - Y
+    - {t: H, h: Ctrl}
+    - {t: A, h: Shift}
+    - {t: E, h: Alt}
+    - {t: I, h: Gui}
+    - ;
+  - - Shift
+    - Q
+    - X
+    - M
+    - C
+    - V
+    - K
+    - P
+    - {t: ',', s: ;}
+    - {t: ., s: ':'}
+    - {t: '?', s: '!'}
+    - ESC
+  - - {t: BSPC, s: DEL}
+    - {t: ␣, h: NAV, s: .␣S}
+    - {t: ⏎, h: FN}
+    - {t: NUMWORD, h: NUM, s: StNUM}
+    - {t: Shift, h: sticky, s: CAPSWORD}
+    - Smart Mouse
+  Diktor:
+  - - {type: trans}
+    - A
+    - M
+    - '['
+    - Z
+    - S
+    - P
+    - D
+    - R
+    - L
+    - X
+    - O
+  - - {type: trans}
+    - {t: E, h: Gui}
+    - {t: B, h: Alt}
+    - {t: T, h: Shift}
+    - {t: J, h: Ctrl}
+    - F
+    - K
+    - {t: Y, h: Ctrl}
+    - {t: N, h: Shift}
+    - {t: C, h: Alt}
+    - {t: H, h: Gui}
+    - I
+  - - {type: trans}
+    - Q
+    - ']'
+    - ''''
+    - .
+    - W
+    - ','
+    - V
+    - G
+    - U
+    - ;
+    - '`'
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  NAV:
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - ⭠🖳 Prew App
+    - 🖳⭢ Next App
+    - {type: trans}
+    - PG UP
+    - {t: BSPC, h: ⌫ word}
+    - {t: 🡅 Up, h: ⇈ Doc}
+    - {t: DEL, h: ⌦ word}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {t: Gui, h: sticky}
+    - {t: Alt, h: sticky}
+    - {t: Shift, h: sticky}
+    - {t: Ctrl, h: sticky}
+    - {type: trans}
+    - PG DN
+    - {t: 🡄 Left, h: ⇇ Line}
+    - {t: 🡇 Down, h: ⇊ Doc}
+    - {t: 🡆 Right, h: ⇉ Line}
+    - ⏎
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - INS
+    - ⭲
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: held}
+    - {type: trans}
+    - {type: trans}
+    - CANCEL
+    - {type: trans}
+  FN:
+  - - {type: trans}
+    - F12
+    - F7
+    - F8
+    - F9
+    - {type: trans}
+    - {type: trans}
+    - $$mdi:skip-previous$$
+    - VOL UP
+    - $$mdi:skip-next$$
+    - $$mdi:volume-off$$
+    - {type: trans}
+  - - {type: trans}
+    - {t: F11, h: Gui}
+    - {t: F4, h: Alt}
+    - {t: F5, h: Shift}
+    - {t: F6, h: Ctrl}
+    - {type: trans}
+    - {type: trans}
+    - {t: '⌘+^+$$mdi:arrow-left$$', h: Ctrl}
+    - {t: VOL DN, h: Shift}
+    - {t: '⌘+^+$$mdi:arrow-right$$', h: Alt}
+    - PP
+    - {type: trans}
+  - - {type: trans}
+    - F10
+    - F1
+    - F2
+    - F3
+    - {type: trans}
+    - ⌘+^+⇧+A
+    - ⌘+^+⇧+Q
+    - ⎇+`
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: held}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  NUM:
+  - - {type: trans}
+    - {type: trans}
+    - {t: '7', s: '&'}
+    - {t: '8', s: '*'}
+    - {t: '9', s: (}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {t: '0', h: Gui, s: )}
+    - {t: '4', h: Alt, s: $}
+    - {t: '5', h: Shift, s: '%'}
+    - {t: '6', h: Ctrl, s: ^}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - Shift
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {t: '1', s: '!'}
+    - {t: '2', s: '@'}
+    - {t: '3', s: '#'}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: held}
+    - {type: trans}
+    - {type: trans}
+  Sys:
+  - - BT CLR
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - '&bootloader'
+    - '&bootloader'
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - '&sys_reset'
+    - '&sys_reset'
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: held}
+    - {type: held}
+    - {type: trans}
+    - {type: trans}
+  Mouse:
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - '&msc SCRL_UP'
+    - PG UP
+    - '&mmv MOVE_UP'
+    - PG DN
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - '&msc SCRL_LEFT'
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_RIGHT'
+    - '&msc SCRL_RIGHT'
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - '&msc SCRL_DOWN'
+    - '&mkp LCLK'
+    - '&mkp MCLK'
+    - '&mkp RCLK'
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+combos:
+- p: [2, 3]
+  k: ESC
+  l: [Base, NAV, NUM]
+- p: [3, 4]
+  k: RET
+  l: [Base, NAV, NUM]
+- p: [2, 4]
+  k: Smart Mouse
+  l: [Base, NAV, NUM]
+  a: top
+  o: 0.25
+  w: 35.0
+  h: 30.0
+- p: [14, 15]
+  k: Tab
+  l: [Base, NAV, NUM]
+- p: [15, 16]
+  k: ldr
+  l: [Base, NAV, NUM]
+- p: [14, 15, 16]
+  k: {t: '&leader_sft', h: ⇧+^+Alt}
+  l: [Base, NAV, NUM]
+  hidden: true
+- p: [26, 28]
+  k: ✂ Cut
+  l: [Base, NAV, NUM]
+  a: bottom
+  o: 0.05
+  w: 35.0
+  h: 30.0
+- p: [26, 27]
+  k: ⧉ Copy
+  l: [Base, NAV, NUM]
+  w: 35.0
+  h: 30.0
+- p: [27, 28]
+  k: 🗎 Paste
+  l: [Base, NAV, NUM]
+  w: 35.0
+  h: 30.0
+- p: [7, 8]
+  k: ⌫
+  l: [Base, NAV, NUM]
+- p: [8, 9]
+  k: ⌦
+  l: [Base, NAV, NUM]
+- p: [19, 20]
+  k: {h: (, s: <}
+  l: [Base, NUM]
+- p: [20, 21]
+  k: {h: ), s: '>'}
+  l: [Base, NUM]
+- p: [19, 20]
+  k: <
+  l: [NAV]
+  hidden: true
+- p: [20, 21]
+  k: '>'
+  l: [NAV]
+  hidden: true
+- p: [31, 32]
+  k: '['
+  l: [Base, NUM]
+- p: [32, 33]
+  k: ']'
+  l: [Base, NUM]
+- p: [31, 32]
+  k: '{'
+  l: [NAV]
+- p: [32, 33]
+  k: '}'
+  l: [NAV]
+- p: [2, 14]
+  k: '@'
+  l: [Base, NAV, NUM]
+- p: [3, 15]
+  k: '#'
+  l: [Base, NAV, NUM]
+- p: [4, 16]
+  k: $
+  l: [Base, NAV, NUM]
+- p: [5, 17]
+  k: '%'
+  l: [Base, NAV, NUM]
+- p: [14, 26]
+  k: '`'
+  l: [Base, NAV, NUM]
+- p: [15, 27]
+  k: \
+  l: [Base, NAV, NUM]
+- p: [16, 28]
+  k: '='
+  l: [Base, NAV, NUM]
+- p: [17, 29]
+  k: '~'
+  l: [Base, NAV, NUM]
+- p: [6, 18]
+  k: ^
+  l: [Base, NAV, NUM]
+- p: [7, 19]
+  k: +
+  l: [Base, NAV, NUM]
+- p: [8, 20]
+  k: '*'
+  l: [Base, NAV, NUM]
+- p: [9, 21]
+  k: '&'
+  l: [Base, NAV, NUM]
+- p: [18, 30]
+  k: _
+  l: [Base, NAV, NUM]
+- p: [19, 31]
+  k: '-'
+  l: [Base, NAV, NUM]
+- p: [20, 32]
+  k: /
+  l: [Base, NAV, NUM]
+- p: [21, 33]
+  k: '|'
+  l: [Base, NAV, NUM]

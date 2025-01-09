@@ -8,7 +8,7 @@ draw_config:
   key_ry: 6.0
   dark_mode: auto
   n_columns: 1
-  separate_combo_diagrams: true
+  separate_combo_diagrams: false
   combo_diagrams_scale: 2
   inner_pad_w: 2.0
   inner_pad_h: 2.0
@@ -33,23 +33,31 @@ draw_config:
     rect.held, rect.combo.held { fill: #fdd;}
     rect.ghost, rect.combo.ghost { fill: #ddd; stroke-dasharray: none; stroke-width: 1;}
     rect.thumb, rect.combo.thumb { fill: #303030; stroke-width: 0;}
-    svg.keymap { background-color: #303030;}
+    svg.keymap { font-size: 14px; background-color: #303030;}
     text.label { stroke: none; fill: #e0f0f0;}
+
+    /* styling for combo tap, and key hold/shifted label text */
+    text.combo, text.hold, text.shifted {
+        font-size: 11px;
+    }
+    /* styling for hold/shifted label text in combo box */
+    text.combo.hold, text.combo.shifted {
+        font-size: 8px;
+    }
   footer_text: geas/zmk-config
   shrink_wide_legends: 7
   style_layer_activators: true
-  glyph_tap_size: 14
-  glyph_hold_size: 12
-  glyph_shifted_size: 10
+  glyph_tap_size: 15
+  glyph_hold_size: 14
+  glyph_shifted_size: 14
   glyphs: {}
 parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map:
     "&rus_toggle":
-      t: MacroRUS
+      t: ⛭RUS
       s: RUS
-    "&capsdance": $$mdi:apple-keyboard-caps$$
     "&caps_word": CAPSWORD
     "&hml LGUI N":
       t: N
@@ -75,11 +83,43 @@ parse_config:
     "&hmr RCTRL H":
       t: H
       h: Ctrl
+    "&bs_del":
+      t: BSPC
+      s: DEL
+    "&dot_spc":
+      t: ".␣S"
+    "&smart_mouse":
+      t: "Smart Mouse"
+    "&num_dance":
+      t: "NUMWORD"
+      s: "StNUM"
 
+    "&swapper":
+      t: 🖳⭢ Next App
+    "&kp LS(TAB)":
+      t: ⭠🖳 Prew App
     "&esc":
       t: Esc
     "&tab":
       t: Tab
+    "&mt_home 0 LEFT":
+      t: 🡄 Left
+      h: ⇇ Line
+    "&mt_end 0 RIGHT":
+      t: 🡆 Right
+      h: ⇉ Line
+    "&mt LC(HOME) UP":
+      t: 🡅 Up
+      h: ⇈ Doc
+    "&mt LC(END) DOWN":
+      t: 🡇 Down
+      h: ⇊ Doc
+    "&mt LC(BSPC) BSPC":
+      t: BSPC
+      h: ⌫ word
+    "&mt LC(DEL) DEL":
+      t: DEL
+      h: ⌦ word
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -241,15 +281,18 @@ parse_config:
     RCTRL: Ctrl
     LSHIFT: Shift
     RSHIFT: Shift
+    LSHFT: Shift
+    RSHFT: Shift
     LALT: Alt
     RALT: Alt
     LGUI: Gui
     RGUI: Gui
     DEL: ⌦
     BACKSPACE: ⌫
-    RET: ⮐
-    ESC: ⎋
-    TAB: ⇥
+    BSPC: ⌫
+    RET: ⏎
+    ESC: ESC
+    TAB: ⭲
     N1:
       s: "!"
       t: "1"
@@ -302,27 +345,19 @@ parse_config:
     DOWN: $$mdi:arrow-down$$
     RIGHT: $$mdi:arrow-right$$
   zmk_combos:
-    combo_capsword:
-      align: top
-      offset: 0.3
-      width: 80.0
-      height: 20.0
-    combo_capslock:
-      align: top
-      offset: 0.95
-      width: 60.0
-      height: 20.0
-    combo_sk_shft:
-      align: top
-      offset: 1.7
-      width: 60.0
-      height: 30.0
-    combo_s_all:
-      align: top
-      offset: 0.3
-    combo_cut:
-      align: bottom
-      offset: 0
+    "combo_mouse": { align: top, offset: 0.25, h: 30, w: 35 }
+    "combo_ret": { k: RET }
+    "combo_tab": { k: Tab }
+    "combo_ldr": { k: ldr }
+    "combo_ldrsh": { hidden: true }
+    "combo_lt": { hidden: true }
+    "combo_gt": { hidden: true }
+
+    "combo_lpar": { k: { h: "(", s: "<" } }
+    "combo_rpar": { k: { h: ")", s: ">" } }
+    "combo_cut": { a: bottom, o: 0.05, k: ✂ Cut, h: 30, w: 35 }
+    "combo_copy": { k: ⧉ Copy, h: 30, w: 35 }
+    "combo_paste": { k: 🗎 Paste, h: 30, w: 35 }
   zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
   zmk_additional_includes:
     - ../zmk-helpers/include
