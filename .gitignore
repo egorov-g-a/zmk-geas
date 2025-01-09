@@ -3,6 +3,6 @@ firmware
 # zephyr
 zmk
 zmk-helpers
-draw/corne.svg
-draw/combos.svg
-draw/corne.yaml
+# draw/corne.svg
+# draw/combos.svg
+# draw/corne.yaml
