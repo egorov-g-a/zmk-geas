@@ -252,7 +252,7 @@ parse_config:
     "&mkp MCLK": Middle Click
     "&mkp MB4": Back Click
     "&mkp MB5": Forward Click
-    "&my_repeat":
+    "&key_repeat":
       s: $$tabler:repeat$$
       t: Repeat
 
