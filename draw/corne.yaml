@@ -90,8 +90,8 @@ layers:
   - - {type: trans}
     - {type: trans}
     - {type: trans}
-    - ⭠🖳 Prew App
-    - 🖳⭢ Next App
+    - {t: Prew App, s: '$$tabler:file-arrow-right$$'}
+    - {t: Next App, s: '$$tabler:file-arrow-left$$'}
     - {type: trans}
     - PG UP
     - {t: BSPC, h: ⌫ word}
@@ -115,7 +115,7 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - {type: trans}
+    - {t: Repeat, s: '$$tabler:repeat$$'}
     - {type: trans}
     - INS
     - ⭲
@@ -138,7 +138,7 @@ layers:
     - {type: trans}
     - {type: trans}
     - $$mdi:skip-previous$$
-    - VOL UP
+    - $$mdi:volume-plus$$
     - $$mdi:skip-next$$
     - $$mdi:volume-off$$
     - {type: trans}
@@ -149,10 +149,10 @@ layers:
     - {t: F6, h: Ctrl}
     - {type: trans}
     - {type: trans}
-    - {t: '⌘+^+$$mdi:arrow-left$$', h: Ctrl}
-    - {t: VOL DN, h: Shift}
-    - {t: '⌘+^+$$mdi:arrow-right$$', h: Alt}
-    - PP
+    - {t: ⭠🖳 Desk, h: Ctrl}
+    - {t: '$$mdi:volume-minus$$', h: Shift}
+    - {t: 🖳⭢ Desk, h: Alt}
+    - $$mdi:play-pause$$
     - {type: trans}
   - - {type: trans}
     - F10
@@ -160,9 +160,9 @@ layers:
     - F2
     - F3
     - {type: trans}
-    - ⌘+^+⇧+A
-    - ⌘+^+⇧+Q
-    - ⎇+`
+    - Pin App
+    - Pin Win
+    - Desk Mgr
     - {type: trans}
     - {type: trans}
     - {type: trans}
@@ -193,7 +193,7 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - Shift
+    - {type: trans}
     - {type: trans}
     - {type: trans}
     - {type: trans}
@@ -216,13 +216,13 @@ layers:
     - {type: trans}
     - {type: trans}
   Sys:
-  - - BT CLR
+  - - {t: BT CLEAR, s: $$bt_icon$$}
     - {type: trans}
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - '&bootloader'
-    - '&bootloader'
+    - boot
+    - boot
     - {type: trans}
     - {type: trans}
     - {type: trans}
@@ -233,18 +233,18 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - '&sys_reset'
-    - '&sys_reset'
+    - reset
+    - reset
     - {type: trans}
     - {type: trans}
     - {type: trans}
     - {type: trans}
     - {type: trans}
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
+  - - {t: BT 0, s: $$bt_icon$$}
+    - {t: BT 1, s: $$bt_icon$$}
+    - {t: BT 2, s: $$bt_icon$$}
+    - {t: BT 3, s: $$bt_icon$$}
+    - {t: BT 4, s: $$bt_icon$$}
     - {type: trans}
     - {type: trans}
     - {type: trans}
@@ -265,9 +265,9 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - '&msc SCRL_UP'
+    - Scroll ↑
     - PG UP
-    - '&mmv MOVE_UP'
+    - Mouse ↑
     - PG DN
     - {type: trans}
     - {type: trans}
@@ -277,11 +277,11 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - '&msc SCRL_LEFT'
-    - '&mmv MOVE_LEFT'
-    - '&mmv MOVE_DOWN'
-    - '&mmv MOVE_RIGHT'
-    - '&msc SCRL_RIGHT'
+    - Scroll ←
+    - Mouse ←
+    - Mouse ↓
+    - Mouse →
+    - Scroll →
     - {type: trans}
   - - {type: trans}
     - {type: trans}
@@ -289,10 +289,10 @@ layers:
     - {type: trans}
     - {type: trans}
     - {type: trans}
-    - '&msc SCRL_DOWN'
-    - '&mkp LCLK'
-    - '&mkp MCLK'
-    - '&mkp RCLK'
+    - Scroll ↓
+    - Left Click
+    - Middle Click
+    - Right Click
     - {type: trans}
     - {type: trans}
   - - {type: trans}
@@ -349,19 +349,17 @@ combos:
   k: ⌦
   l: [Base, NAV, NUM]
 - p: [19, 20]
-  k: {h: (, s: <}
+  k: (
   l: [Base, NUM]
 - p: [20, 21]
-  k: {h: ), s: '>'}
+  k: )
   l: [Base, NUM]
 - p: [19, 20]
   k: <
   l: [NAV]
-  hidden: true
 - p: [20, 21]
   k: '>'
   l: [NAV]
-  hidden: true
 - p: [31, 32]
   k: '['
   l: [Base, NUM]

@@ -1,10 +1,14 @@
 <svg width="1020" height="2645" viewBox="0 0 1020 2645" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="mdi:arrow-left">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+<svg id="bt_icon">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bluetooth" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M7 8l10 8l-5 4l0 -16l5 4l-10 8"></path>
 </svg>
-<svg id="mdi:arrow-right">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+
+</svg>
+<svg id="mdi:play-pause">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
 </svg>
 <svg id="mdi:skip-next">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
@@ -12,8 +16,72 @@
 <svg id="mdi:skip-previous">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
 </svg>
+<svg id="mdi:volume-minus">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-minus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H22V13H14V11Z" /></svg>
+</svg>
 <svg id="mdi:volume-off">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
+</svg>
+<svg id="mdi:volume-plus">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-plus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H17V8H19V11H22V13H19V16H17V13H14V11Z" /></svg>
+</svg>
+<svg id="tabler:file-arrow-left">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-file-arrow-left"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M15 15h-6" />
+  <path d="M11.5 17.5l-2.5 -2.5l2.5 -2.5" />
+</svg>
+</svg>
+<svg id="tabler:file-arrow-right">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-file-arrow-right"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M9 15h6" />
+  <path d="M12.5 17.5l2.5 -2.5l-2.5 -2.5" />
+</svg>
+</svg>
+<svg id="tabler:repeat">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-repeat"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+  <path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3" />
+</svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
@@ -84,8 +152,8 @@ text.footer {
     paint-order: stroke;
 }
 
-/* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right {
     font-size: 11px;
 }
 
@@ -99,12 +167,20 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.left {
+    text-anchor: start;
+}
+
+text.right {
+    text-anchor: end;
+}
+
 text.layer-activator {
     text-decoration: underline;
 }
 
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
     font-size: 8px;
 }
 
@@ -545,14 +621,16 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(224, 32)" class="key keypos-3">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-1.1em">⭠🖳</tspan><tspan x="0" dy="1.1em">Prew</tspan><tspan x="0" dy="1.1em">App</tspan>
+<tspan x="0" dy="-0.0em">Prew</tspan><tspan x="0" dy="1.1em">App</tspan>
 </text>
+<use href="#tabler:file-arrow-right" xlink:href="#tabler:file-arrow-right" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph tabler:file-arrow-right"/>
 </g>
 <g transform="translate(288, 40)" class="key keypos-4">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-1.1em">🖳⭢</tspan><tspan x="0" dy="1.1em">Next</tspan><tspan x="0" dy="1.1em">App</tspan>
+<tspan x="0" dy="-0.0em">Next</tspan><tspan x="0" dy="1.1em">App</tspan>
 </text>
+<use href="#tabler:file-arrow-left" xlink:href="#tabler:file-arrow-left" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph tabler:file-arrow-left"/>
 </g>
 <g transform="translate(352, 48)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -658,8 +736,10 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(224, 160)" class="key trans keypos-27">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
 </g>
-<g transform="translate(288, 168)" class="key trans keypos-28">
-<rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
+<g transform="translate(288, 168)" class="key keypos-28">
+<rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
+<text x="0" y="4" class="key tap">Repeat</text>
+<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph tabler:repeat"/>
 </g>
 <g transform="translate(352, 176)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -739,9 +819,7 @@ text.combo.hold, text.combo.shifted {
 </g>
 <g transform="translate(736, 32)" class="key keypos-8">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">VOL</tspan><tspan x="0" dy="1.1em">UP</tspan>
-</text>
+<use href="#mdi:volume-plus" xlink:href="#mdi:volume-plus" x="-8" y="-4" height="15" width="15.0" class="key tap glyph mdi:volume-plus"/>
 </g>
 <g transform="translate(800, 40)" class="key keypos-9">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
@@ -785,24 +863,26 @@ text.combo.hold, text.combo.shifted {
 </g>
 <g transform="translate(672, 104)" class="key keypos-19">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-8" y="-4" height="15" width="15.0" class="key tap glyph mdi:arrow-left"/>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-1.1em">⭠🖳</tspan><tspan x="0" dy="1.1em">Desk</tspan>
+</text>
 <text x="0" y="20" class="key hold">Ctrl</text>
 </g>
 <g transform="translate(736, 96)" class="key keypos-20">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">
-<tspan x="0" dy="-1.1em">VOL</tspan><tspan x="0" dy="1.1em">DN</tspan>
-</text>
+<use href="#mdi:volume-minus" xlink:href="#mdi:volume-minus" x="-8" y="-4" height="15" width="15.0" class="key tap glyph mdi:volume-minus"/>
 <text x="0" y="20" class="key hold">Shift</text>
 </g>
 <g transform="translate(800, 104)" class="key keypos-21">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-8" y="-4" height="15" width="15.0" class="key tap glyph mdi:arrow-right"/>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-1.1em">🖳⭢</tspan><tspan x="0" dy="1.1em">Desk</tspan>
+</text>
 <text x="0" y="20" class="key hold">Alt</text>
 </g>
 <g transform="translate(864, 120)" class="key keypos-22">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">PP</text>
+<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="-8" y="-4" height="15" width="15.0" class="key tap glyph mdi:play-pause"/>
 </g>
 <g transform="translate(928, 120)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -831,15 +911,21 @@ text.combo.hold, text.combo.shifted {
 </g>
 <g transform="translate(608, 176)" class="key keypos-30">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">⌘+^+⇧+A</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.55em">Pin</tspan><tspan x="0" dy="1.1em">App</tspan>
+</text>
 </g>
 <g transform="translate(672, 168)" class="key keypos-31">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">⌘+^+⇧+Q</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.55em">Pin</tspan><tspan x="0" dy="1.1em">Win</tspan>
+</text>
 </g>
 <g transform="translate(736, 160)" class="key keypos-32">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">⎇+`</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.55em">Desk</tspan><tspan x="0" dy="1.1em">Mgr</tspan>
+</text>
 </g>
 <g transform="translate(800, 168)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -951,9 +1037,8 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(672, 104)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
 </g>
-<g transform="translate(736, 96)" class="key keypos-20">
-<rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">Shift</text>
+<g transform="translate(736, 96)" class="key trans keypos-20">
+<rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
 </g>
 <g transform="translate(800, 104)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -1032,8 +1117,9 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(32, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">BT</tspan><tspan x="0" dy="1.1em">CLR</tspan>
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.1em">CLEAR</tspan>
 </text>
+<use href="#bt_icon" xlink:href="#bt_icon" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph bt_icon"/>
 </g>
 <g transform="translate(96, 56)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -1049,11 +1135,11 @@ text.combo.hold, text.combo.shifted {
 </g>
 <g transform="translate(352, 48)" class="key keypos-5">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+<text x="0" y="4" class="key tap">boot</text>
 </g>
 <g transform="translate(608, 48)" class="key keypos-6">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+<text x="0" y="4" class="key tap">boot</text>
 </g>
 <g transform="translate(672, 40)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -1087,11 +1173,11 @@ text.combo.hold, text.combo.shifted {
 </g>
 <g transform="translate(352, 112)" class="key keypos-17">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap"><tspan style="font-size: 70%">&amp;sys_reset</tspan></text>
+<text x="0" y="4" class="key tap">reset</text>
 </g>
 <g transform="translate(608, 112)" class="key keypos-18">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap"><tspan style="font-size: 70%">&amp;sys_reset</tspan></text>
+<text x="0" y="4" class="key tap">reset</text>
 </g>
 <g transform="translate(672, 104)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -1110,28 +1196,38 @@ text.combo.hold, text.combo.shifted {
 </g>
 <g transform="translate(32, 184)" class="key keypos-24">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">BT</text>
-<text x="0" y="20" class="key hold">0</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.1em">0</tspan>
+</text>
+<use href="#bt_icon" xlink:href="#bt_icon" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph bt_icon"/>
 </g>
 <g transform="translate(96, 184)" class="key keypos-25">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">BT</text>
-<text x="0" y="20" class="key hold">1</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.1em">1</tspan>
+</text>
+<use href="#bt_icon" xlink:href="#bt_icon" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph bt_icon"/>
 </g>
 <g transform="translate(160, 168)" class="key keypos-26">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">BT</text>
-<text x="0" y="20" class="key hold">2</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.1em">2</tspan>
+</text>
+<use href="#bt_icon" xlink:href="#bt_icon" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph bt_icon"/>
 </g>
 <g transform="translate(224, 160)" class="key keypos-27">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">BT</text>
-<text x="0" y="20" class="key hold">3</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.1em">3</tspan>
+</text>
+<use href="#bt_icon" xlink:href="#bt_icon" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph bt_icon"/>
 </g>
 <g transform="translate(288, 168)" class="key keypos-28">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
-<text x="0" y="4" class="key tap">BT</text>
-<text x="0" y="20" class="key hold">4</text>
+<text x="0" y="4" class="key tap">
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.1em">4</tspan>
+</text>
+<use href="#bt_icon" xlink:href="#bt_icon" x="-7" y="-20" height="14" width="14.0" class="key shifted glyph bt_icon"/>
 </g>
 <g transform="translate(352, 176)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
@@ -1198,7 +1294,7 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(608, 48)" class="key keypos-6">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">&amp;msc</tspan><tspan x="0" dy="1.1em">SCRL_UP</tspan>
+<tspan x="0" dy="-0.55em">Scroll</tspan><tspan x="0" dy="1.1em">↑</tspan>
 </text>
 </g>
 <g transform="translate(672, 40)" class="key keypos-7">
@@ -1210,7 +1306,7 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(736, 32)" class="key keypos-8">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">&amp;mmv</tspan><tspan x="0" dy="1.1em">MOVE_UP</tspan>
+<tspan x="0" dy="-0.55em">Mouse</tspan><tspan x="0" dy="1.1em">↑</tspan>
 </text>
 </g>
 <g transform="translate(800, 40)" class="key keypos-9">
@@ -1246,31 +1342,31 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(608, 112)" class="key keypos-18">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.1em" style="font-size: 78%">SCRL_LEFT</tspan>
+<tspan x="0" dy="-0.55em">Scroll</tspan><tspan x="0" dy="1.1em">←</tspan>
 </text>
 </g>
 <g transform="translate(672, 104)" class="key keypos-19">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em" style="font-size: 78%">&amp;mmv</tspan><tspan x="0" dy="1.1em" style="font-size: 78%">MOVE_LEFT</tspan>
+<tspan x="0" dy="-0.55em">Mouse</tspan><tspan x="0" dy="1.1em">←</tspan>
 </text>
 </g>
 <g transform="translate(736, 96)" class="key keypos-20">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em" style="font-size: 78%">&amp;mmv</tspan><tspan x="0" dy="1.1em" style="font-size: 78%">MOVE_DOWN</tspan>
+<tspan x="0" dy="-0.55em">Mouse</tspan><tspan x="0" dy="1.1em">↓</tspan>
 </text>
 </g>
 <g transform="translate(800, 104)" class="key keypos-21">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em" style="font-size: 70%">&amp;mmv</tspan><tspan x="0" dy="1.1em" style="font-size: 70%">MOVE_RIGHT</tspan>
+<tspan x="0" dy="-0.55em">Mouse</tspan><tspan x="0" dy="1.1em">→</tspan>
 </text>
 </g>
 <g transform="translate(864, 120)" class="key keypos-22">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em" style="font-size: 70%">&amp;msc</tspan><tspan x="0" dy="1.1em" style="font-size: 70%">SCRL_RIGHT</tspan>
+<tspan x="0" dy="-0.55em">Scroll</tspan><tspan x="0" dy="1.1em">→</tspan>
 </text>
 </g>
 <g transform="translate(928, 120)" class="key trans keypos-23">
@@ -1297,25 +1393,25 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(608, 176)" class="key keypos-30">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.1em" style="font-size: 78%">SCRL_DOWN</tspan>
+<tspan x="0" dy="-0.55em">Scroll</tspan><tspan x="0" dy="1.1em">↓</tspan>
 </text>
 </g>
 <g transform="translate(672, 168)" class="key keypos-31">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">&amp;mkp</tspan><tspan x="0" dy="1.1em">LCLK</tspan>
+<tspan x="0" dy="-0.55em">Left</tspan><tspan x="0" dy="1.1em">Click</tspan>
 </text>
 </g>
 <g transform="translate(736, 160)" class="key keypos-32">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">&amp;mkp</tspan><tspan x="0" dy="1.1em">MCLK</tspan>
+<tspan x="0" dy="-0.55em">Middle</tspan><tspan x="0" dy="1.1em">Click</tspan>
 </text>
 </g>
 <g transform="translate(800, 168)" class="key keypos-33">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
 <text x="0" y="4" class="key tap">
-<tspan x="0" dy="-0.55em">&amp;mkp</tspan><tspan x="0" dy="1.1em">RCLK</tspan>
+<tspan x="0" dy="-0.55em">Right</tspan><tspan x="0" dy="1.1em">Click</tspan>
 </text>
 </g>
 <g transform="translate(864, 184)" class="key trans keypos-34">
