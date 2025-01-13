@@ -50,7 +50,93 @@ draw_config:
   glyph_tap_size: 15
   glyph_hold_size: 14
   glyph_shifted_size: 14
-  glyphs: {}
+  glyphs:
+    vol_up: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+         <path d="M15 8a5 5 0 0 1 0 8"></path>
+         <path d="M17.7 5a9 9 0 0 1 0 14"></path>
+         <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"></path>
+      </svg>
+    vol_down: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+         <path d="M15 8a5 5 0 0 1 0 8"></path>
+         <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"></path>
+      </svg>
+    vol_mute: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+         <path d="M15 8a5 5 0 0 1 1.912 4.934m-1.377 2.602a5 5 0 0 1 -.535 .464"></path>
+         <path d="M17.7 5a9 9 0 0 1 2.362 11.086m-1.676 2.299a9 9 0 0 1 -.686 .615"></path>
+         <path d="M9.069 5.054l.431 -.554a.8 .8 0 0 1 1.5 .5v2m0 4v8a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l1.294 -1.664"></path>
+         <path d="M3 3l18 18"></path>
+      </svg>
+    usb_icon: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-usb" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M12 17v-11.5"></path>
+          <path d="M7 10v3l5 3"></path>
+          <path d="M12 14.5l5 -2v-2.5"></path>
+          <path d="M16 10h2v-2h-2z"></path>
+          <path d="M7 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+          <path d="M10 5.5h4l-2 -2.5z"></path>
+      </svg>
+    bt_icon: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bluetooth" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M7 8l10 8l-5 4l0 -16l5 4l-10 8"></path>
+      </svg>
+    screenshot: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-screenshot" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+         <path d="M7 19a2 2 0 0 1 -2 -2"></path>
+         <path d="M5 13v-2"></path>
+         <path d="M5 7a2 2 0 0 1 2 -2"></path>
+         <path d="M11 5h2"></path>
+         <path d="M17 5a2 2 0 0 1 2 2"></path>
+         <path d="M19 11v2"></path>
+         <path d="M19 17v4"></path>
+         <path d="M21 19h-4"></path>
+         <path d="M13 19h-2"></path>
+      </svg>
+    sel_all: |
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-select-all" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+         <path d="M8 8m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
+         <path d="M12 20v.01"></path>
+         <path d="M16 20v.01"></path>
+         <path d="M8 20v.01"></path>
+         <path d="M4 20v.01"></path>
+         <path d="M4 16v.01"></path>
+         <path d="M4 12v.01"></path>
+         <path d="M4 8v.01"></path>
+         <path d="M4 4v.01"></path>
+         <path d="M8 4v.01"></path>
+         <path d="M12 4v.01"></path>
+         <path d="M16 4v.01"></path>
+         <path d="M20 4v.01"></path>
+         <path d="M20 8v.01"></path>
+         <path d="M20 12v.01"></path>
+         <path d="M20 16v.01"></path>
+         <path d="M20 20v.01"></path>
+      </svg>
+    media_next: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>skip-next</title><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
+    media_prev: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>skip-previous</title><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
+    media_play_pause: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>play-pause</title><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
+    svg_arrow_left: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+    svg_arrow_up: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-up</title><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" /></svg>
+    svg_arrow_down: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-down</title><path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" /></svg>
+    svg_arrow_right: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-right</title><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+
 parse_config:
   preprocess: true
   skip_binding_parsing: false
@@ -93,11 +179,12 @@ parse_config:
     "&num_dance":
       t: "NUMWORD"
       s: "StNUM"
-
     "&swapper":
-      t: 🖳⭢ Next App
+      s: $$tabler:file-arrow-left$$
+      t: Next App
     "&kp LS(TAB)":
-      t: ⭠🖳 Prew App
+      s: $$tabler:file-arrow-right$$
+      t: Prew App
     "&esc":
       t: Esc
     "&tab":
@@ -120,6 +207,55 @@ parse_config:
     "&mt LC(DEL) DEL":
       t: DEL
       h: ⌦ word
+    "&bt BT_CLR":
+      s: $$bt_icon$$
+      t: BT CLEAR
+    "&bt BT_SEL 0":
+      s: $$bt_icon$$
+      t: BT 0
+    "&bt BT_SEL 1":
+      s: $$bt_icon$$
+      t: BT 1
+    "&bt BT_SEL 2":
+      s: $$bt_icon$$
+      t: BT 2
+    "&bt BT_SEL 3":
+      s: $$bt_icon$$
+      t: BT 3
+    "&bt BT_SEL 4":
+      s: $$bt_icon$$
+      t: BT 4
+    "&bootloader": boot
+    "&sys_reset": reset
+    "&hmr LCTRL LG(LC(LEFT))":
+      t: ⭠🖳 Desk
+      h: Ctrl
+    "&hmr LALT LG(LC(RIGHT))":
+      t: 🖳⭢ Desk
+      h: Alt
+    "&kp LG(LC(LS(Q)))": Pin Win
+    "&kp LG(LC(LS(A)))": Pin App
+    "&kp LA(GRAVE)": Desk Mgr
+
+    "&mmv MOVE_UP": Mouse ↑
+    "&mmv MOVE_DOWN": Mouse ↓
+    "&mmv MOVE_LEFT": Mouse ←
+    "&mmv MOVE_RIGHT": Mouse →
+
+    "&msc SCRL_UP": Scroll ↑
+    "&msc SCRL_DOWN": Scroll ↓
+    "&msc SCRL_LEFT": Scroll ←
+    "&msc SCRL_RIGHT": Scroll →
+
+    "&mkp LCLK": Left Click
+    "&mkp RCLK": Right Click
+    "&mkp MCLK": Middle Click
+    "&mkp MB4": Back Click
+    "&mkp MB5": Forward Click
+    "&my_repeat":
+      s: $$tabler:repeat$$
+      t: Repeat
+
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -334,12 +470,12 @@ parse_config:
     KP_N9: "9"
     KP_N0: "0"
     SPACE: ␣
-    C_VOLUME_UP: $$mdi:volume-plus$$
-    C_VOLUME_DOWN: $$mdi:volume-minus$$
+    C_VOL_UP: $$mdi:volume-plus$$
+    C_VOL_DN: $$mdi:volume-minus$$
     C_MUTE: $$mdi:volume-off$$
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
-    C_PLAY_PAUSE: $$mdi:play-pause$$
+    C_PP: $$mdi:play-pause$$
     LEFT: $$mdi:arrow-left$$
     UP: $$mdi:arrow-up$$
     DOWN: $$mdi:arrow-down$$
@@ -350,11 +486,11 @@ parse_config:
     "combo_tab": { k: Tab }
     "combo_ldr": { k: ldr }
     "combo_ldrsh": { hidden: true }
-    "combo_lt": { hidden: true }
-    "combo_gt": { hidden: true }
 
-    "combo_lpar": { k: { h: "(", s: "<" } }
-    "combo_rpar": { k: { h: ")", s: ">" } }
+    "combo_lt": { k: "<" }
+    "combo_gt": { k: ">" }
+    "combo_lpar": { k: ( }
+    "combo_rpar": { k: ) }
     "combo_cut": { a: bottom, o: 0.05, k: ✂ Cut, h: 30, w: 35 }
     "combo_copy": { k: ⧉ Copy, h: 30, w: 35 }
     "combo_paste": { k: 🗎 Paste, h: 30, w: 35 }
