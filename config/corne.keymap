@@ -221,6 +221,7 @@ ZMK_MACRO(lang_macro,
     bindings = <&kp LG(SPACE) &tog RUS>;
 )
 
+/*ZMK_KEY_REPEAT(my_repeat)*/
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS
