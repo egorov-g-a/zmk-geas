@@ -9,7 +9,7 @@ on:
       - "config/**/*.dtsi"
       - "config/**/*.h"
       - "config/**/*.conf"
-      - "keymap_config.yaml"
+      #- "keymap_config.yaml"
 
 jobs:
   draw:
