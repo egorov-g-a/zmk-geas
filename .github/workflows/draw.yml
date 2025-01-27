@@ -17,6 +17,7 @@ jobs:
     permissions:
       contents: write # allow workflow to commit to the repo
     with:
+      debug_mode: true
       amend_commit: false
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
       west_config_path: "config"
