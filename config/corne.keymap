@@ -10,9 +10,9 @@
 // Source desired key-position labels
 #include "zmk-helpers/key-labels/42.h"
 // Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/russian.dtsi"
+/*#include "zmk-helpers/unicode-chars/russian.dtsi"*/
 // Greek chars
-#include "zmk-helpers/unicode-chars/greek.dtsi"
+/*#include "zmk-helpers/unicode-chars/greek.dtsi"*/
 
 #define DEF 0
 #define RUS 1
