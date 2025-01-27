@@ -224,7 +224,16 @@ ZMK_MACRO(lang_macro,
 /*ZMK_KEY_REPEAT(my_repeat)*/
 /* Keymap */
 
-ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <FN NUM>;
+            then-layer = <SYS>;
+        };
+    };
+};
+/*ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS*/
 
 ZMK_LAYER(def,
 //╭───────────┬─────────────┬─────────────┬───────────────┬──────────────┬─────────────╮╭─────────────┬──────────────┬───────────────┬─────────────┬──────────────┬───────────╮
