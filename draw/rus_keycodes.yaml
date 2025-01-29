@@ -1,0 +1,45 @@
+parse_config:
+  zmk_keycode_map:
+    GRAVE: Ё
+    SEMICOLON: Ж
+    SEMI: Ж
+    SINGLE_QUOTE: Э
+    SQT: Э
+    APOSTROPHE: Э
+    APOS: Э
+    COMMA: Б
+    PERIOD: Ю
+    DOT: Ю
+    LEFT_BRACKET: Х
+    LBKT: Х
+    RIGHT_BRACKET: Ъ
+    RBKT: Ъ
+    Q: Й
+    W: Ц
+    E: У
+    R: К
+    T: Е
+    Y: Н
+    U: Г
+    I: Ш
+    O: Щ
+    P: З
+    A: Ф
+    S: Ы
+    D: В
+    F: А
+    G: П
+    H: Р
+    J: О
+    K: Л
+    L: Д
+    Z: Я
+    X: Ч
+    C: С
+    V: М
+    B: И
+    N: Т
+    M: Ь
+  zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
+  zmk_additional_includes:
+    - ../zmk-helpers/include

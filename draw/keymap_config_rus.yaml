@@ -136,7 +136,6 @@ draw_config:
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-down</title><path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" /></svg>
     svg_arrow_right: |
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-right</title><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
-
 parse_config:
   preprocess: true
   skip_binding_parsing: false
@@ -166,16 +165,16 @@ parse_config:
     "&tab":
       t: Tab
     "&mt_home 0 LEFT":
-      t: 🡄 Left
+      t: "\U0001F844 Left"
       h: ⇇ Line
     "&mt_end 0 RIGHT":
-      t: 🡆 Right
+      t: "\U0001F846 Right"
       h: ⇉ Line
     "&mt LC(HOME) UP":
-      t: 🡅 Up
+      t: "\U0001F845 Up"
       h: ⇈ Doc
     "&mt LC(END) DOWN":
-      t: 🡇 Down
+      t: "\U0001F847 Down"
       h: ⇊ Doc
     "&mt LC(BSPC) BSPC":
       t: BSPC
@@ -204,25 +203,22 @@ parse_config:
     "&bootloader": boot
     "&sys_reset": reset
     "&hmr LCTRL LG(LC(LEFT))":
-      t: ⭠🖳 Desk
+      t: "⭠\U0001F5B3 Desk"
       h: Ctrl
     "&hmr LALT LG(LC(RIGHT))":
-      t: 🖳⭢ Desk
+      t: "\U0001F5B3⭢ Desk"
       h: Alt
     "&kp LG(LC(LS(Q)))": Pin Win
     "&kp LG(LC(LS(A)))": Pin App
     "&kp LA(GRAVE)": Desk Mgr
-
     "&mmv MOVE_UP": Mouse ↑
     "&mmv MOVE_DOWN": Mouse ↓
     "&mmv MOVE_LEFT": Mouse ←
     "&mmv MOVE_RIGHT": Mouse →
-
     "&msc SCRL_UP": Scroll ↑
     "&msc SCRL_DOWN": Scroll ↓
     "&msc SCRL_LEFT": Scroll ←
     "&msc SCRL_RIGHT": Scroll →
-
     "&mkp LCLK": Left Click
     "&mkp RCLK": Right Click
     "&mkp MCLK": Middle Click
@@ -231,7 +227,6 @@ parse_config:
     "&key_repeat":
       s: $$tabler:repeat$$
       t: Repeat
-
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -360,31 +355,31 @@ parse_config:
     NON_US_BACKSLASH: \
     PIPE2: "|"
     NON_US_BSLH: "|"
-    SEMICOLON: ;
-    SEMI: ;
+    SEMICOLON: Ж
+    SEMI: Ж
     COLON: ":"
-    SINGLE_QUOTE: "'"
-    SQT: "'"
-    APOSTROPHE: "'"
-    APOS: "'"
+    SINGLE_QUOTE: "Э"
+    SQT: "Э"
+    APOSTROPHE: "Э"
+    APOS: "Э"
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    COMMA: ","
+    COMMA: "Б"
     LESS_THAN: <
     LT: <
-    PERIOD: .
-    DOT: .
+    PERIOD: Ю
+    DOT: Ю
     GREATER_THAN: ">"
     GT: ">"
-    LEFT_BRACKET: "["
-    LBKT: "["
+    LEFT_BRACKET: "Х"
+    LBKT: "Х"
     LEFT_BRACE: "{"
     LBRC: "{"
-    RIGHT_BRACKET: "]"
-    RBKT: "]"
+    RIGHT_BRACKET: "Ъ"
+    RBKT: "Ъ"
     RIGHT_BRACE: "}"
     RBRC: "}"
-    GRAVE: "`"
+    GRAVE: "Ё"
     TILDE: "~"
     NON_US_HASH: "#"
     NUHS: "#"
@@ -456,20 +451,68 @@ parse_config:
     UP: $$mdi:arrow-up$$
     DOWN: $$mdi:arrow-down$$
     RIGHT: $$mdi:arrow-right$$
+    Q: Й
+    W: Ц
+    E: У
+    R: К
+    T: Е
+    Y: Н
+    U: Г
+    I: Ш
+    O: Щ
+    P: З
+    A: Ф
+    S: Ы
+    D: В
+    F: А
+    G: П
+    H: Р
+    J: О
+    K: Л
+    L: Д
+    Z: Я
+    X: Ч
+    C: С
+    V: М
+    B: И
+    N: Т
+    M: Ь
   zmk_combos:
-    "combo_mouse": { align: top, offset: 0.25, h: 30, w: 35 }
-    "combo_ret": { k: RET }
-    "combo_tab": { k: Tab }
-    "combo_ldr": { k: ldr }
-    "combo_ldrsh": { hidden: true }
-
-    "combo_lt": { k: "<" }
-    "combo_gt": { k: ">" }
-    "combo_lpar": { k: ( }
-    "combo_rpar": { k: ) }
-    "combo_cut": { a: bottom, o: 0.05, k: ✂ Cut, h: 30, w: 35 }
-    "combo_copy": { k: ⧉ Copy, h: 30, w: 35 }
-    "combo_paste": { k: 🗎 Paste, h: 30, w: 35 }
+    "combo_mouse":
+      align: top
+      offset: 0.25
+      h: 30
+      w: 35
+    "combo_ret":
+      k: RET
+    "combo_tab":
+      k: Tab
+    "combo_ldr":
+      k: ldr
+    "combo_ldrsh":
+      hidden: true
+    "combo_lt":
+      k: "<"
+    "combo_gt":
+      k: ">"
+    "combo_lpar":
+      k: (
+    "combo_rpar":
+      k: )
+    "combo_cut":
+      a: bottom
+      o: 0.05
+      k: ✂ Cut
+      h: 30
+      w: 35
+    "combo_copy":
+      k: ⧉ Copy
+      h: 30
+      w: 35
+    "combo_paste":
+      k: "\U0001F5CE Paste"
+      h: 30
+      w: 35
   zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
   zmk_additional_includes:
     - ../zmk-helpers/include
