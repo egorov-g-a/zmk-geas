@@ -22,5 +22,5 @@ jobs:
       keymap_patterns: "config/corne.keymap" # path to the keymaps to parse
       config_path: "draw/keymap_config.yaml" # config file, ignored if not exists
       output_folder: "draw" # path to save produced SVG and keymap YAML files
-      parse_args: "corne: '-c 12 -l Base Diktor NAV FN NUM Sys Mouse' " # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "corne:'-k crkbd/rev1 -l LAYOUT_split_3x6_3 --keys-only' " # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      parse_args: "corne:'-c 12 -l Base Diktor NAV FN NUM Sys Mouse'" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: "corne:'-k crkbd/rev1 -l LAYOUT_split_3x6_3 --keys-only'" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
