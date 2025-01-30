@@ -201,6 +201,12 @@ parse_config:
     "&bt BT_SEL 4":
       s: $$bt_icon$$
       t: BT 4
+    "&out OUT_BLE":
+      s: $$bt_icon$$
+      t: OUT BTE
+    "&out OUT_USB":
+      s: $$usb_icon$$
+      t: OUT USB
     "&bootloader": boot
     "&sys_reset": reset
     "&hmr LCTRL LG(LC(LEFT))":
@@ -325,6 +331,40 @@ parse_config:
     QUES: "?"
   zmk_remove_keycode_prefix: []
   zmk_keycode_map:
+    RU_CYRILLIC_A: А
+    RU_CYRILLIC_BE: Б
+    RU_CYRILLIC_VE: В
+    RU_CYRILLIC_GHE: Г
+    RU_CYRILLIC_DE: Д
+    RU_CYRILLIC_IE: Е
+    RU_CYRILLIC_IO: Ё
+    RU_CYRILLIC_ZHE: Ж
+    RU_CYRILLIC_ZE: З
+    RU_CYRILLIC_I: И
+    RU_CYRILLIC_SHORT_I: Й
+    RU_CYRILLIC_KA: К
+    RU_CYRILLIC_EL: Л
+    RU_CYRILLIC_EM: М
+    RU_CYRILLIC_EN: Н
+    RU_CYRILLIC_O: О
+    RU_CYRILLIC_PE: П
+    RU_CYRILLIC_ER: Р
+    RU_CYRILLIC_ES: С
+    RU_CYRILLIC_TE: Т
+    RU_CYRILLIC_U: У
+    RU_CYRILLIC_EF: Ф
+    RU_CYRILLIC_HA: Х
+    RU_CYRILLIC_TSE: Ц
+    RU_CYRILLIC_CHE: Ч
+    RU_CYRILLIC_SHA: Ш
+    RU_CYRILLIC_SHCHA: Щ
+    RU_CYRILLIC_SOFT_SIGN: Ь
+    RU_CYRILLIC_YERU: Ы
+    RU_CYRILLIC_HARD_SIGN: Ъ
+    RU_CYRILLIC_E: Э
+    RU_CYRILLIC_YU: Ю
+    RU_CYRILLIC_YA: Я
+
     EXCLAMATION: "!"
     EXCL: "!"
     AT_SIGN: "@"

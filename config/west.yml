@@ -8,6 +8,8 @@ manifest:
     # ZMK helper
     - name: urob
       url-base: https://github.com/urob
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
   projects:
     - name: zmk
       # remote: zmkfirmware
@@ -16,20 +18,18 @@ manifest:
       # revision: v0.1+mouse # not patched??? build behavior issue with zmk-leader-key
       import: app/west.yml
     - name: zmk-helpers
-      remote: urob
       revision: main
     - name: zmk-adaptive-key
-      remote: urob
       revision: main
     - name: zmk-auto-layer
-      remote: urob
       revision: main
     - name: zmk-leader-key
-      remote: urob
       revision: main
       # revision: v0.1+locality
     - name: zmk-tri-state
-      remote: urob
+      revision: main
+    - name: zmk-locales
+      remote: joelspadin
       revision: main
   self:
     path: config

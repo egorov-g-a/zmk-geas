@@ -24,7 +24,7 @@ layers:
     - {t: A, h: Shift}
     - {t: E, h: Alt}
     - {t: I, h: Gui}
-    - ;
+    - {t: Repeat, s: '$$tabler:repeat$$'}
   - - Shift
     - Q
     - X
@@ -45,41 +45,41 @@ layers:
     - Smart Mouse
   Diktor:
   - - {type: trans}
-    - A
-    - M
-    - '['
-    - Z
-    - S
-    - P
-    - D
-    - R
-    - L
-    - X
-    - O
+    - Ф
+    - Ь
+    - Х
+    - Я
+    - Ы
+    - З
+    - В
+    - К
+    - Д
+    - Ч
+    - Щ
   - - {type: trans}
-    - {t: E, h: Gui}
-    - {t: B, h: Alt}
-    - {t: T, h: Shift}
-    - {t: J, h: Ctrl}
-    - F
-    - K
-    - {t: Y, h: Ctrl}
-    - {t: N, h: Shift}
-    - {t: C, h: Alt}
-    - {t: H, h: Gui}
-    - I
+    - {t: У, h: Gui}
+    - {t: И, h: Alt}
+    - {t: Е, h: Shift}
+    - {t: О, h: Ctrl}
+    - А
+    - Л
+    - {t: Н, h: Ctrl}
+    - {t: Т, h: Shift}
+    - {t: С, h: Alt}
+    - {t: Р, h: Gui}
+    - Ш
   - - {type: trans}
-    - Q
-    - ']'
-    - ''''
-    - .
-    - W
-    - ','
-    - V
-    - G
-    - U
-    - ;
-    - '`'
+    - Й
+    - Ъ
+    - Э
+    - Ю
+    - Ц
+    - Б
+    - М
+    - П
+    - Г
+    - Ж
+    - Ё
   - - {type: trans}
     - {type: trans}
     - {type: trans}
@@ -104,7 +104,7 @@ layers:
     - {t: Alt, h: sticky}
     - {t: Shift, h: sticky}
     - {t: Ctrl, h: sticky}
-    - {type: trans}
+    - ESC
     - PG DN
     - {t: 🡄 Left, h: ⇇ Line}
     - {t: 🡇 Down, h: ⇊ Doc}
@@ -112,9 +112,9 @@ layers:
     - ⏎
     - {type: trans}
   - - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
+    - {t: '?', s: '!'}
+    - {t: ., s: ':'}
+    - {t: ',', s: ;}
     - {t: Repeat, s: '$$tabler:repeat$$'}
     - {type: trans}
     - INS
@@ -152,7 +152,7 @@ layers:
     - {t: ⭠🖳 Desk, h: Ctrl}
     - {t: '$$mdi:volume-minus$$', h: Shift}
     - {t: 🖳⭢ Desk, h: Alt}
-    - $$mdi:play-pause$$
+    - {t: '$$mdi:play-pause$$', h: Gui}
     - {type: trans}
   - - PAUSE BREAK
     - F10
@@ -218,8 +218,8 @@ layers:
   Sys:
   - - {t: BT CLEAR, s: $$bt_icon$$}
     - {type: trans}
-    - {type: trans}
-    - {type: trans}
+    - OUT BLE
+    - OUT USB
     - {type: trans}
     - boot
     - boot

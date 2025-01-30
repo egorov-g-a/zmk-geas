@@ -24,7 +24,7 @@ layers:
     - {t: Ф, h: Shift}
     - {t: У, h: Alt}
     - {t: Ш, h: Gui}
-    - Ж
+    - {t: Repeat, s: '$$tabler:repeat$$'}
   - - Shift
     - Й
     - Ч
@@ -104,7 +104,7 @@ layers:
     - {t: Alt, h: sticky}
     - {t: Shift, h: sticky}
     - {t: Ctrl, h: sticky}
-    - {type: trans}
+    - ESC
     - PG DN
     - {t: 🡄 Left, h: ⇇ Line}
     - {t: 🡇 Down, h: ⇊ Doc}
@@ -112,9 +112,9 @@ layers:
     - ⏎
     - {type: trans}
   - - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
+    - {t: '?', s: '!'}
+    - {t: Ю, s: ':'}
+    - {t: Б, s: Ж}
     - {t: Repeat, s: '$$tabler:repeat$$'}
     - {type: trans}
     - INS
@@ -152,7 +152,7 @@ layers:
     - {t: ⭠🖳 Desk, h: Ctrl}
     - {t: '$$mdi:volume-minus$$', h: Shift}
     - {t: 🖳⭢ Desk, h: Alt}
-    - $$mdi:play-pause$$
+    - {t: '$$mdi:play-pause$$', h: Gui}
     - {type: trans}
   - - PAUSE BREAK
     - F10
@@ -218,8 +218,8 @@ layers:
   Sys:
   - - {t: BT CLEAR, s: $$bt_icon$$}
     - {type: trans}
-    - {type: trans}
-    - {type: trans}
+    - OUT BLE
+    - OUT USB
     - {type: trans}
     - boot
     - boot
