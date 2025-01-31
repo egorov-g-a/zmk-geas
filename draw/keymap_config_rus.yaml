@@ -200,6 +200,12 @@ parse_config:
     "&bt BT_SEL 4":
       s: $$bt_icon$$
       t: BT 4
+    "&out OUT_BLE":
+      s: $$bt_icon$$
+      t: OUT BTE
+    "&out OUT_USB":
+      s: $$usb_icon$$
+      t: OUT USB
     "&bootloader": boot
     "&sys_reset": reset
     "&hmr LCTRL LG(LC(LEFT))":
@@ -547,5 +553,5 @@ parse_config:
       h: 30
       w: 35
   zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
-  zmk_additional_includes:
-    - ../zmk-helpers/include
+  zmk_additional_includes: ["../zmk-helpers/include"]
+  zamk_additional_includes: ["../zmk-helpers/include"]

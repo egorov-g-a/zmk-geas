@@ -511,5 +511,4 @@ parse_config:
     "combo_copy": { k: ⧉ Copy, h: 30, w: 35 }
     "combo_paste": { k: 🗎 Paste, h: 30, w: 35 }
   zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
-  zmk_additional_includes:
-    - ../zmk-helpers/include
+  zmk_additional_includes: ["../zmk-helpers/include"]

@@ -218,8 +218,8 @@ layers:
   Sys:
   - - {t: BT CLEAR, s: $$bt_icon$$}
     - {type: trans}
-    - OUT BLE
-    - OUT USB
+    - {t: OUT BTE, s: $$bt_icon$$}
+    - {t: OUT USB, s: $$usb_icon$$}
     - {type: trans}
     - boot
     - boot
@@ -272,10 +272,10 @@ layers:
     - {type: trans}
     - {type: trans}
   - - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
-    - {type: trans}
+    - {t: Gui, h: sticky}
+    - {t: Alt, h: sticky}
+    - {t: Shift, h: sticky}
+    - {t: Ctrl, h: sticky}
     - {type: trans}
     - Scroll ←
     - Mouse ←
@@ -321,10 +321,6 @@ combos:
 - p: [15, 16]
   k: ldr
   l: [Base, Diktor, NAV, NUM]
-- p: [14, 15, 16]
-  k: {t: '&leader_sft', h: ⇧+^+Alt}
-  l: [Base, Diktor, NAV, NUM]
-  hidden: true
 - p: [26, 28]
   k: ✂ Cut
   l: [Base, Diktor, NAV, NUM]
