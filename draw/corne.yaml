@@ -25,7 +25,7 @@ layers:
     - {t: E, h: Alt}
     - {t: I, h: Gui}
     - {t: Repeat, s: '$$tabler:repeat$$'}
-  - - Shift
+  - - {t: SYM, h: toggle}
     - Q
     - X
     - M
@@ -97,8 +97,8 @@ layers:
     - {t: BSPC, h: ⌫ word}
     - {t: 🡅 Up, h: ⇈ Doc}
     - {t: DEL, h: ⌦ word}
-    - '{'
-    - '}'
+    - {type: trans}
+    - {type: trans}
   - - CLCK
     - {t: Gui, h: sticky}
     - {t: Alt, h: sticky}
@@ -112,21 +112,21 @@ layers:
     - ⏎
     - {type: trans}
   - - {type: trans}
-    - {t: '?', s: '!'}
-    - {t: ., s: ':'}
-    - {t: ',', s: ;}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
     - {t: Repeat, s: '$$tabler:repeat$$'}
     - {type: trans}
     - INS
     - ⭲
-    - (
-    - )
-    - <
-    - '>'
+    - {t: ',', s: ;}
+    - {t: ., s: ':'}
+    - {t: '?', s: '!'}
+    - {type: trans}
   - - {type: trans}
     - {type: held}
     - {type: trans}
-    - {type: trans}
+    - {t: SYM, h: toggle}
     - CANCEL
     - {type: trans}
   FN:
@@ -173,49 +173,92 @@ layers:
     - {type: trans}
     - {type: trans}
   NUM:
-  - - '`'
-    - ^
+  - - {type: trans}
+    - {type: trans}
     - {t: '7', s: '&'}
     - {t: '8', s: '*'}
     - {t: '9', s: (}
-    - +
-    - '|'
-    - (
-    - )
-    - '&'
-    - '#'
-    - $
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
   - - {type: trans}
     - {t: '0', h: Gui, s: )}
     - {t: '4', h: Alt, s: $}
     - {t: '5', h: Shift, s: '%'}
     - {t: '6', h: Ctrl, s: ^}
-    - '='
-    - /
-    - {t: '{', h: Ctrl}
-    - {t: '}', h: Shift}
-    - {t: '*', h: Alt}
-    - {t: '@', h: Gui}
-    - '%'
-  - - '~'
-    - ''''
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
     - {t: '1', s: '!'}
     - {t: '2', s: '@'}
     - {t: '3', s: '#'}
-    - '-'
-    - \
-    - '['
-    - ']'
-    - <
-    - '>'
-    - _
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
   - - {type: trans}
     - {type: trans}
     - {type: trans}
     - {type: held}
     - {type: trans}
     - {type: trans}
-  Sys:
+  SYM:
+  - - {type: trans}
+    - '`'
+    - ^
+    - '%'
+    - '&'
+    - +
+    - '|'
+    - (
+    - )
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {t: $, h: Gui}
+    - {t: '@', h: Alt}
+    - {t: <, h: Shift}
+    - {t: '>', h: Ctrl}
+    - '='
+    - /
+    - {t: '{', h: Ctrl}
+    - {t: '}', h: Shift}
+    - {t: '*', h: Alt}
+    - {t: '#', h: Gui}
+    - {type: trans}
+  - - {type: trans}
+    - '~'
+    - ''''
+    - {t: '?', s: '!'}
+    - _
+    - '-'
+    - \
+    - '['
+    - ']'
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  - - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+    - {t: SYM, h: toggle}
+    - {type: trans}
+  SYS:
   - - {t: BT CLEAR, s: $$bt_icon$$}
     - {type: trans}
     - {t: OUT BTE, s: $$bt_icon$$}
