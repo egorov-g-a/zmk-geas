@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -14,9 +8,9 @@
 
 / {
     behaviors {
-        left_HRM: left_HRM {
+        hml: left_HM {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_HRM";
+            label = "LEFT_HM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -27,9 +21,9 @@
             hold-trigger-on-release;
         };
 
-        right_HRM: right_HRM {
+        hmr: right_HM {
             compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_HRM";
+            label = "RIGHT_HM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -48,13 +42,13 @@
             display-name="Base";
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |  TAB       |  B              |  L              |  D                |  W                |  Z          |=|  J            |  F                |  O                 |  U               |  SQT             |  \            |
-// |  LCTRL     |  HRM LGUI/N     |  HRM LALT/R     |  HRM LSHIFT/T     |  HRM LCTRL/S      |  G          |=|  Y            |  HRM RCTRL/H      |  HRM RSHIFT/A      |  HRM RALT/E      |  HRM RGUI/I      |  ;            |
+// |  LCTRL     |  HM LGUI/N      |  HM LALT/R      |  HM LSHIFT/T      |  HM LCTRL/S       |  G          |=|  Y            |  HM RCTRL/H       |  HM RSHIFT/A       |  HM RALT/E       |  HM RGUI/I       |  ;            |
 // |  LSHFT     |  Q              |  X              |  M                |  C                |  V          |=|  K            |  P                |  ,                 |  .               |  /               |  DEL          |
 //                                                  |  ESC              |  LWR              |  SPC        |=|  BACKSPACE    |  RSE              | ENTER              |
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
     &kp TAB     &kp B             &kp L             &kp D               &kp W               &kp Z           &kp J           &kp F               &kp O                &kp U              &kp SQT            &kp BACKSLASH
-    &kp LCTRL   &left_HRM LGUI N  &left_HRM LALT R  &left_HRM LSHIFT T  &left_HRM LCTRL S   &kp G           &kp Y           &right_HRM RCTRL H  &right_HRM RSHIFT A  &right_HRM RALT E  &right_HRM RGUI I  &kp SEMICOLON
+    &kp LCTRL   &hml LGUI N       &hml LALT R       &hml LSHIFT T       &hml LCTRL S        &kp G           &kp Y           &hmr RCTRL H        &hmr RSHIFT A        &hmr RALT E        &hmr RGUI I        &kp SEMICOLON
     &kp LSHFT   &kp Q             &kp X             &kp M               &kp C               &kp V           &kp K           &kp P               &kp COMMA            &kp DOT            &kp FSLH           &kp DEL
                                                     &kp ESC             &mo LOWER           &kp SPACE       &kp BACKSPACE   &mo RAISER          &kp ENTER
             >;
@@ -85,9 +79,9 @@
 //                                                  |                   |                   |             |=|               |                   |                    |
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp TAB     &kp GRAVE         &kp EXCL          &kp AT              &kp HASH            &trans          &trans          &trans              &kp LPAR             &kp RPAR           &trans              &kp BSPC
-    &kp LCTRL   &kp TILDE         &kp DLLR          &kp PRCNT           &kp CARET           &trans          &kp MINUS       &kp EQUAL           &kp LBKT             &kp RBKT           &kp BSLH            &trans
-    &kp LSHFT   &trans            &kp AMPS          &kp ASTRK           &trans              &trans          &kp UNDER       &kp PLUS            &kp LBRC             &kp RBRC           &kp PIPE            &trans
+    &kp TAB     &kp GRAVE         &kp EXCL          &kp AT              &kp HASH            &hml LSHFT STAR &trans          &trans              &kp LPAR             &kp RPAR           &trans              &kp BSPC
+    &kp LCTRL   &kp TILDE         &kp DLLR          &kp PRCNT           &kp CARET         &hml LSHFT LS(N8) &kp MINUS       &kp EQUAL           &kp LBKT             &kp RBKT           &kp BSLH            &trans
+    &kp LSHFT   &trans            &kp AMPS          &kp ASTRK           &trans              &hml LSHFT N8   &kp UNDER       &kp PLUS            &kp LBRC             &kp RBRC           &kp PIPE            &trans
                                                     &trans              &trans              &trans          &trans          &trans              &trans
             >;
         };
