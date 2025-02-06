@@ -25,7 +25,7 @@
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
     / { \
         behaviors { \
-            /omit-if-no-ref/ name: name { \
+            name: name { \
             compatible = "zmk,behavior-hold-tap"; \
             #binding-cells = <2>; \
             bindings = <&kp>, <&kp>; \
