@@ -1,14 +1,3 @@
-#define M_EXCL  &m_shkey N1 // !
-#define M_AT    &m_shkey N2 // @
-#define M_HASH  &m_shkey N3 // #
-#define M_DLLR  &m_shkey N4 // $
-#define M_PRCNT &m_shkey N5 // %
-#define M_CARET &m_shkey N6 // ^
-#define M_AMPS  &m_shkey N7 // &
-#define M_STAR  &m_shkey N8 // *
-#define M_LPAR  &m_shkey N9 // (
-#define M_RPAR  &m_shkey N0 // )
-
 / {
     macros {
         /* Emulation modifier keys function for SHIFT key
@@ -39,5 +28,16 @@
         };
     };
 };
+
+#define M_EXCL  &m_shkey N1 // !
+#define M_AT    &m_shkey N2 // @
+#define M_HASH  &m_shkey N3 // #
+#define M_DLLR  &m_shkey N4 // $
+#define M_PRCNT &m_shkey N5 // %
+#define M_CARET &m_shkey N6 // ^
+#define M_AMPS  &m_shkey N7 // &
+#define M_STAR  &m_shkey N8 // *
+#define M_LPAR  &m_shkey N9 // (
+#define M_RPAR  &m_shkey N0 // )
 
 /* vim: set ft=c tw=180: */
