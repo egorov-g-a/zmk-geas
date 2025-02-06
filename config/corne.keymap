@@ -2,66 +2,36 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+/*layers*/
 #define BASE 0
 #define LOWER 1
 #define RAISER 2
 
+#define XXX &none
+#define ___ &trans
+
+#include "behaviors.dtsi"
+#include "macros.dtsi"
+#include "combos.dtsi"
+
 / {
-    behaviors {
-        hml: left_HM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_HM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <180>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-            hold-trigger-on-release;
-        };
-
-        hmr: right_HM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_HM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <180>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-            hold-trigger-on-release;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         base {
             display-name="Base";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |  TAB       |  B              |  L              |  D                |  W                |  Z          |=|  J            |  F                |  O                 |  U               |  SQT             |  \            |
-// |  LCTRL     |  HM LGUI/N      |  HM LALT/R      |  HM LSHIFT/T      |  HM LCTRL/S       |  G          |=|  Y            |  HM RCTRL/H       |  HM RSHIFT/A       |  HM RALT/E       |  HM RGUI/I       |  ;            |
-// |  LSHFT     |  Q              |  X              |  M                |  C                |  V          |=|  K            |  P                |  ,                 |  .               |  /               |  DEL          |
-//                                                  |  ESC              |  LWR              |  SPC        |=|  BACKSPACE    |  RSE              | ENTER              |
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp TAB     &kp B             &kp L             &kp D               &kp W               &kp Z           &kp J           &kp F               &kp O                &kp U              &kp SQT            &kp BACKSLASH
-    &kp LCTRL   &hml LGUI N       &hml LALT R       &hml LSHIFT T       &hml LCTRL S        &kp G           &kp Y           &hmr RCTRL H        &hmr RSHIFT A        &hmr RALT E        &hmr RGUI I        &kp SEMICOLON
-    &kp LSHFT   &kp Q             &kp X             &kp M               &kp C               &kp V           &kp K           &kp P               &kp COMMA            &kp DOT            &kp FSLH           &kp DEL
-                                                    &kp ESC             &mo LOWER           &kp SPACE       &kp BACKSPACE   &mo RAISER          &kp ENTER
+//|--------------|--------------|--------------|--------------|--------------|--------------| |--------------|--------------|--------------|--------------|--------------|--------------|
+  &kp TAB        &kp STAR       M_AT           M_STAR         &kp W          &bootloader      &bootloader    &kp F          &kp O          &kp U          &kp SQT        &kp BACKSLASH
+  &kp LCTRL      &kp LS(N8)    &hml LALT M_AT &hml LSHFT M_STAR &hml LCTRL N8 &sys_reset       &sys_reset     &hmr RCTRL H   &hmr RSHIFT A  &hmr RALT E    &hmr RGUI I    &kp SEMICOLON
+  &kp LSHFT      &kp N8         &kp N2         &kp N8          &kp N8         &kp V            &kp K          &kp P          &kp COMMA      &kp DOT        &kp FSLH       &kp DEL
+//|--------------|--------------|--------------|--------------|--------------|--------------| |--------------|--------------|--------------|--------------|--------------|--------------|
+                                               &kp ESC        &mo LOWER      &kp SPACE         &kp BACKSPACE &mo RAISER     &kp ENTER
             >;
         };
 
         lower {
             display-name="Lower";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |  TAB       |  BT_CLR         |  1              |  2                |  3                |  CAPS       |=|               |  END              |  PAGE_DOWN         |  PAGE UP         |  HOME            |  BACKSPACE    |
-// |  LCTRL     |  BT_SEL 0       |  4              |  5                |  6                |             |=|               |  LFT              |  DWN               |  UP              |  RGT             |               |
-// |  LSHFT     |  BT_SEL 1       |  7              |  8                |  9                |  0          |=|               |                   |                    |                  |                  |               |
-//                                                  |                   |                   |             |=|               |                   |                    |
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
     &kp TAB     &bt BT_CLR        &kp N1            &kp N2              &kp N3              &kp CAPS        &trans          &kp END             &kp PAGE_DOWN        &kp PAGE_UP        &kp HOME           &kp BSPC
     &kp LCTRL   &bt BT_SEL 0      &kp N4            &kp N5              &kp N6              &trans          &trans          &kp LEFT            &kp DOWN             &kp UP             &kp RIGHT          &trans
@@ -72,12 +42,6 @@
 
         raiser {
             display-name="Raiser";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |  TAB       |  `              |  !              |  @                |  #                |             |=|               |                   |  (                 |  )               |                  |  BACKSPACE    |
-// |  LCTRL     |  ~              |  $              |  %                |  ^                |             |=|  -            |  =                |  [                 |  ]               |  \               |               |
-// |  LSHFT     |                 |  &              |  *                |                   |             |=|  _            |  +                |  {                 |  }               |  |               |               |
-//                                                  |                   |                   |             |=|               |                   |                    |
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
     &kp TAB     &kp GRAVE         &kp EXCL          &kp AT              &kp HASH            &kp STAR        &trans          &trans              &kp LPAR             &kp RPAR           &trans              &kp BSPC
     &kp LCTRL   &kp TILDE         &kp DLLR          &kp PRCNT           &kp CARET           &kp LS(N8)      &kp MINUS       &kp EQUAL           &kp LBKT             &kp RBKT           &kp BSLH            &trans
@@ -87,3 +51,5 @@
         };
     };
 };
+
+/* vim: set ft=c tw=180: */
