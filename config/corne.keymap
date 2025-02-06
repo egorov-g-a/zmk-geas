@@ -11,6 +11,9 @@
 #include "macros.dtsi"
 #include "combos.dtsi"
 
+
+MAKE_HRM(m_hml, &kp, &m_shkey, KEYS_R THUMBS)  // left-hand HRMs
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -18,8 +21,8 @@
         base {
             display-name="Base";
             bindings = <
-  &kp TAB     &kp STAR      M_AT            M_STAR            &kp W          &bootloader    &bootloader    &kp F          &kp O          &kp U          &kp SQT        &kp BACKSLASH
-  &kp LCTRL   &kp LS(N8)    &hml LALT N     &hml LSHFT N      &hml LCTRL N   &sys_reset     &sys_reset     &hmr RCTRL H   &hmr RSHIFT A  &hmr RALT E    &hmr RGUI I    &kp SEMICOLON
+  &kp TAB     &kp STAR      M_AT            M_STAR            &hml LSHFT N8  &bootloader    &bootloader    &kp F          &kp O          &kp U          &kp SQT        &kp BACKSLASH
+  &kp LCTRL   &kp LS(N8)    &m_hml LALT N2  &m_hml LSHFT N8  &m_hml LCTRL N8 &sys_reset     &sys_reset     &hmr RCTRL H   &hmr RSHIFT A  &hmr RALT E    &hmr RGUI I    &kp SEMICOLON
   &kp LSHFT   &kp N8        &kp N2          &kp N8            &kp N8         &kp V          &kp K          &kp P          &kp COMMA      &kp DOT        &kp FSLH       &kp DEL
                                             &kp ESC           &mo LOWER      &kp SPACE      &kp BACKSPACE  &mo RAISER     &kp ENTER
             >;
