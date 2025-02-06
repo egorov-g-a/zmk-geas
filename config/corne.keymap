@@ -7,9 +7,6 @@
 #define LOWER 1
 #define RAISER 2
 
-#define XXX &none
-#define ___ &trans
-
 #include "behaviors.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi"
@@ -21,32 +18,30 @@
         base {
             display-name="Base";
             bindings = <
-//|--------------|--------------|--------------|--------------|--------------|--------------| |--------------|--------------|--------------|--------------|--------------|--------------|
-  &kp TAB        &kp STAR       M_AT           M_STAR         &kp W          &bootloader      &bootloader    &kp F          &kp O          &kp U          &kp SQT        &kp BACKSLASH
-  &kp LCTRL      &kp LS(N8)    &hml LALT M_AT &hml LSHFT M_STAR &hml LCTRL N8 &sys_reset       &sys_reset     &hmr RCTRL H   &hmr RSHIFT A  &hmr RALT E    &hmr RGUI I    &kp SEMICOLON
-  &kp LSHFT      &kp N8         &kp N2         &kp N8          &kp N8         &kp V            &kp K          &kp P          &kp COMMA      &kp DOT        &kp FSLH       &kp DEL
-//|--------------|--------------|--------------|--------------|--------------|--------------| |--------------|--------------|--------------|--------------|--------------|--------------|
-                                               &kp ESC        &mo LOWER      &kp SPACE         &kp BACKSPACE &mo RAISER     &kp ENTER
+  &kp TAB     &kp STAR      M_AT            M_STAR            &kp W          &bootloader    &bootloader    &kp F          &kp O          &kp U          &kp SQT        &kp BACKSLASH
+  &kp LCTRL   &kp LS(N8)    &hml LALT N     &hml LSHFT N      &hml LCTRL N   &sys_reset     &sys_reset     &hmr RCTRL H   &hmr RSHIFT A  &hmr RALT E    &hmr RGUI I    &kp SEMICOLON
+  &kp LSHFT   &kp N8        &kp N2          &kp N8            &kp N8         &kp V          &kp K          &kp P          &kp COMMA      &kp DOT        &kp FSLH       &kp DEL
+                                            &kp ESC           &mo LOWER      &kp SPACE      &kp BACKSPACE  &mo RAISER     &kp ENTER
             >;
         };
 
         lower {
             display-name="Lower";
             bindings = <
-    &kp TAB     &bt BT_CLR        &kp N1            &kp N2              &kp N3              &kp CAPS        &trans          &kp END             &kp PAGE_DOWN        &kp PAGE_UP        &kp HOME           &kp BSPC
-    &kp LCTRL   &bt BT_SEL 0      &kp N4            &kp N5              &kp N6              &trans          &trans          &kp LEFT            &kp DOWN             &kp UP             &kp RIGHT          &trans
-    &kp LSHFT   &bt BT_SEL 1      &kp N7            &kp N8              &kp N9              &kp N0          &trans          &trans              &trans               &trans             &trans             &trans
-                                                    &trans              &trans              &trans          &trans          &trans              &trans
+  &kp TAB     &bt BT_CLR    &kp N1         &kp N2             &kp N3         &kp CAPS       &trans          &kp END       &kp PAGE_DOWN  &kp PAGE_UP    &kp HOME       &kp BSPC
+  &kp LCTRL   &bt BT_SEL 0  &kp N4         &kp N5             &kp N6         &trans         &trans          &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT      &trans
+  &kp LSHFT   &bt BT_SEL 1  &kp N7         &kp N8             &kp N9         &kp N0         &trans          &trans        &trans         &trans         &trans         &trans
+                                           &trans             &trans         &trans         &trans          &trans        &trans
             >;
         };
 
         raiser {
             display-name="Raiser";
             bindings = <
-    &kp TAB     &kp GRAVE         &kp EXCL          &kp AT              &kp HASH            &kp STAR        &trans          &trans              &kp LPAR             &kp RPAR           &trans              &kp BSPC
-    &kp LCTRL   &kp TILDE         &kp DLLR          &kp PRCNT           &kp CARET           &kp LS(N8)      &kp MINUS       &kp EQUAL           &kp LBKT             &kp RBKT           &kp BSLH            &trans
-    &kp LSHFT   &trans            &kp AMPS          &kp ASTRK           &trans              &kp N8          &kp UNDER       &kp PLUS            &kp LBRC             &kp RBRC           &kp PIPE            &trans
-                                                    &trans              &trans              &trans          &trans          &trans              &trans
+  &kp TAB     &kp GRAVE     &kp EXCL       &kp AT             &kp HASH       &kp STAR       &trans          &trans        &kp LPAR       &kp RPAR       &trans         &kp BSPC
+  &kp LCTRL   &kp TILDE     &kp DLLR       &kp PRCNT          &kp CARET      &kp LS(N8)     &kp MINUS       &kp EQUAL     &kp LBKT       &kp RBKT       &kp BSLH       &trans
+  &kp LSHFT   &trans        &kp AMPS       &kp ASTRK          &trans         &kp N8         &kp UNDER       &kp PLUS      &kp LBRC       &kp RBRC       &kp PIPE       &trans
+                                           &trans             &trans         &trans         &trans          &trans        &trans
             >;
         };
     };
