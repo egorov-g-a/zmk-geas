@@ -238,6 +238,22 @@ parse_config:
       s: $$tabler:repeat$$
       t: Repeat
 
+    "&m_shkey N1": "!"
+    "&m_shkey N2": "@"
+    "&m_shkey N3": "#"
+    "&m_shkey N4": "$"
+    "&m_shkey N5": "%"
+    "&m_shkey N6": "^"
+    "&m_shkey N7": "&"
+    "&m_shkey N8": "*"
+    "&m_shkey N9": "("
+    "&m_shkey N0": ")"
+
+    "&m_shkey COMMA": "<"
+    "&m_shkey DOT": ">"
+    "&m_shkey LBKT": "{"
+    "&m_shkey RBKT": "}"
+
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle

@@ -255,8 +255,8 @@ layers:
   - - {type: trans}
     - {type: trans}
     - {type: trans}
-    - {type: trans}
     - {t: SYM, h: toggle}
+    - {type: trans}
     - {type: trans}
   SYS:
   - - {t: BT CLEAR, s: $$bt_icon$$}

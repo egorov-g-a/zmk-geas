@@ -1299,14 +1299,14 @@ text.combo.hold, text.combo.shifted {
 <g transform="translate(401, 256) rotate(30.0)" class="key trans keypos-38">
 <rect rx="6" ry="6" x="-30" y="-46" width="60" height="92" class="key trans"/>
 </g>
-<g transform="translate(559, 256) rotate(-30.0)" class="key trans keypos-39">
-<rect rx="6" ry="6" x="-30" y="-46" width="60" height="92" class="key trans"/>
-</g>
-<g transform="translate(634, 244) rotate(-15.0)" class="key keypos-40">
-<rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key"/>
+<g transform="translate(559, 256) rotate(-30.0)" class="key keypos-39">
+<rect rx="6" ry="6" x="-30" y="-46" width="60" height="92" class="key"/>
 <a href="#SYM">
 <text x="0" y="4" class="key tap layer-activator">SYM</text>
-</a><text x="0" y="20" class="key hold">toggle</text>
+</a><text x="0" y="36" class="key hold">toggle</text>
+</g>
+<g transform="translate(634, 244) rotate(-15.0)" class="key trans keypos-40">
+<rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
 </g>
 <g transform="translate(704, 234)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-30" y="-30" width="60" height="60" class="key trans"/>
