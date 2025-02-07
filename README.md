@@ -6,3 +6,10 @@
 - keymap editor <https://nickcoutsos.github.io/keymap-editor/>
 - zmk firmware **keycodes** <https://zmk.dev/docs/keymaps/list-of-keycodes/>
 - zmk-locale for russians letters in SVG <https://github.com/joelspadin/zmk-locales>
+
+## Resources
+
+---
+
+- [@minusfive's zmk-config](https://github.com/minusfive/zmk-config)
+- [@urob's zmk-config](https://github.com/urob/zmk-config)
