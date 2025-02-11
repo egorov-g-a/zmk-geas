@@ -336,13 +336,13 @@ layers:
     - Left Click
     - Middle Click
     - Right Click
-    - {type: trans}
+    - Left Click
     - {type: trans}
   - - {type: trans}
     - {type: trans}
     - {type: trans}
-    - {type: trans}
-    - {type: trans}
+    - Scroll ↑
+    - Scroll ↓
     - {type: trans}
 combos:
 - p: [2, 3]
