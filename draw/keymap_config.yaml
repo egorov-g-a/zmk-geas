@@ -168,10 +168,10 @@ parse_config:
       t: Next AWin
     "&kp LS(TAB)":
       s: $$tabler:file-arrow-left$$
-      t: Prew App
+      t: Prev App
     "&kp LS(GRAVE)":
       s: $$tabler:arrow-autofit-left$$
-      t: Prew App
+      t: Prev AWin
     "&esc":
       t: Esc
     "&tab":

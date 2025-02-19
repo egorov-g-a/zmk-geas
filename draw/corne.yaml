@@ -89,8 +89,8 @@ layers:
   NAV:
   - - {type: trans}
     - {type: trans}
-    - {t: Prew App, s: '$$tabler:arrow-autofit-left$$'}
-    - {t: Prew App, s: '$$tabler:file-arrow-left$$'}
+    - {t: Prev AWin, s: '$$tabler:arrow-autofit-left$$'}
+    - {t: Prev App, s: '$$tabler:file-arrow-left$$'}
     - {t: Next App, s: '$$tabler:file-arrow-right$$'}
     - {t: Next AWin, s: '$$tabler:arrow-autofit-right$$'}
     - PG UP
