@@ -220,10 +220,10 @@ parse_config:
       t: OUT USB
     "&bootloader": boot
     "&sys_reset": reset
-    "&hmr LCTRL LG(LS(LEFT))":
+    "&hmr LCTRL LG(LA(LEFT))":
       t: ⭠🖳 Desk
       h: Ctrl
-    "&hmr LALT LG(LS(RIGHT))":
+    "&hmr LALT LG(LA(RIGHT))":
       t: 🖳⭢ Desk
       h: Alt
     "&kp LG(LC(LS(Q)))": Pin Win
