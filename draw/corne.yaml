@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   Base:
-  - - {t: ⛭RUS, s: RUS}
+  - - {t: '$$tabler:typography$$', h: RUS, s: '$$tabler:alphabet-cyrillic$$'}
     - B
     - L
     - D
@@ -13,7 +13,7 @@ layers:
     - U
     - ''''
     - \
-  - - ⭲
+  - - TAB
     - {t: N, h: Gui}
     - {t: R, h: Alt}
     - {t: T, h: Shift}
@@ -39,7 +39,7 @@ layers:
     - ESC
   - - {t: BSPC, s: DEL}
     - {t: ␣, h: NAV, s: .␣S}
-    - {t: ⏎, h: FN}
+    - {t: $$ret_icon$$, h: FN}
     - {t: NUMWORD, h: NUM, s: StNUM}
     - {t: Shift, h: sticky, s: CAPSWORD}
     - Smart Mouse
@@ -89,17 +89,17 @@ layers:
   NAV:
   - - {type: trans}
     - {type: trans}
-    - {type: trans}
-    - {t: Prew App, s: '$$tabler:file-arrow-right$$'}
-    - {t: Next App, s: '$$tabler:file-arrow-left$$'}
-    - {type: trans}
+    - {t: Prew App, s: '$$tabler:arrow-autofit-left$$'}
+    - {t: Prew App, s: '$$tabler:file-arrow-left$$'}
+    - {t: Next App, s: '$$tabler:file-arrow-right$$'}
+    - {t: Next AWin, s: '$$tabler:arrow-autofit-right$$'}
     - PG UP
     - {t: BSPC, h: ⌫ word}
     - {t: 🡅 Up, h: ⇈ Doc}
     - {t: DEL, h: ⌦ word}
     - {type: trans}
     - {type: trans}
-  - - CLCK
+  - - CAPS
     - {t: Gui, h: sticky}
     - {t: Alt, h: sticky}
     - {t: Shift, h: sticky}
@@ -109,7 +109,7 @@ layers:
     - {t: 🡄 Left, h: ⇇ Line}
     - {t: 🡇 Down, h: ⇊ Doc}
     - {t: 🡆 Right, h: ⇉ Line}
-    - ⏎
+    - $$ret_icon$$
     - {type: trans}
   - - {type: trans}
     - {type: trans}
@@ -118,7 +118,7 @@ layers:
     - {t: Repeat, s: '$$tabler:repeat$$'}
     - {type: trans}
     - INS
-    - ⭲
+    - TAB
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
@@ -130,7 +130,7 @@ layers:
     - CANCEL
     - {type: trans}
   FN:
-  - - PSCRN
+  - - Print Screen
     - F12
     - F7
     - F8
@@ -142,7 +142,7 @@ layers:
     - $$mdi:skip-next$$
     - $$mdi:volume-off$$
     - {type: trans}
-  - - SLCK
+  - - Scroll Lock
     - {t: F11, h: Gui}
     - {t: F4, h: Alt}
     - {t: F5, h: Shift}
@@ -154,7 +154,7 @@ layers:
     - {t: 🖳⭢ Desk, h: Alt}
     - {t: '$$mdi:play-pause$$', h: Gui}
     - {type: trans}
-  - - PAUSE BREAK
+  - - Pause Break
     - F10
     - F1
     - F2

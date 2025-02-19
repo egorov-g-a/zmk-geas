@@ -158,7 +158,13 @@ ZMK_TRI_STATE(smart_mouse,
 // Alt+Tab swapper, requires PR #1366
 ZMK_TRI_STATE(swapper,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <LT2>;
+    ignored-key-positions = <LT2 LT3>;
+)
+
+// Alt+GRAVE swapper_alt, requires PR #1366
+ZMK_TRI_STATE(swapper_alt,
+    bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
+    ignored-key-positions = <LT2 LT3>;
 )
 
 // reuse basic mod-morph scheme
@@ -215,8 +221,8 @@ ZMK_TAP_DANCE(copy_cut,
 
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
-#define DSK_PREV    &hmr LCTRL LG(LC(LEFT))  // previous desktop
-#define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next     desktop
+#define DSK_PREV    &hmr LCTRL LG(LS(LEFT))  // previous desktop
+#define DSK_NEXT    &hmr LALT LG(LS(RIGHT))  // next     desktop
 #define PIN_WIN     &kp LG(LC(LS(Q)))        // pin window across desktops
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
@@ -267,7 +273,7 @@ ZMK_LAYER(rus,
 
 ZMK_LAYER(nav,
 //╭───────────┬─────────────┬─────────────┬───────────────┬──────────────┬─────────────╮╭─────────────┬──────────────┬───────────────┬─────────────┬──────────────┬───────────╮
-    ___         ___           ___           &kp LS(TAB)     &swapper       ___            &kp PG_UP     NAV_BSPC       NAV_UP          NAV_DEL       ___            ___
+    ___         ___           &kp LS(GRAVE) &kp LS(TAB)     &swapper       &swapper_alt   &kp PG_UP     NAV_BSPC       NAV_UP          NAV_DEL       ___            ___
 //├───────────┼─────────────┼─────────────┼───────────────┼──────────────┼─────────────┤├─────────────┼──────────────┼───────────────┼─────────────┼──────────────┼───────────┤
     &kp CLCK    &sk LGUI      &sk LALT      &sk LSHFT       &sk LCTRL      &kp ESC        &kp PG_DN     NAV_LEFT       NAV_DOWN        NAV_RIGHT     &kp RET        ___
 //├───────────┼─────────────┼─────────────┼───────────────┼──────────────┼─────────────┤├─────────────┼──────────────┼───────────────┼─────────────┼──────────────┼───────────┤

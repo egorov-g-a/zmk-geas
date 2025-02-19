@@ -51,6 +51,10 @@ draw_config:
   glyph_hold_size: 14
   glyph_shifted_size: 14
   glyphs:
+    ret_icon: |
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+          <path d="M360-240 120-480l240-240 56 56-144 144h488v-160h80v240H272l144 144-56 56Z"/>
+      </svg>
     vol_up: |
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -142,8 +146,9 @@ parse_config:
   skip_binding_parsing: false
   raw_binding_map:
     "&rus_toggle":
-      t: ⛭RUS
-      s: RUS
+      s: $$tabler:alphabet-cyrillic$$
+      t: $$tabler:typography$$
+      h: RUS
     "&caps_word": CAPSWORD
     "&bs_del":
       t: BSPC
@@ -156,10 +161,16 @@ parse_config:
       t: "NUMWORD"
       s: "StNUM"
     "&swapper":
-      s: $$tabler:file-arrow-left$$
-      t: Next App
-    "&kp LS(TAB)":
       s: $$tabler:file-arrow-right$$
+      t: Next App
+    "&swapper_alt":
+      s: $$tabler:arrow-autofit-right$$
+      t: Next AWin
+    "&kp LS(TAB)":
+      s: $$tabler:file-arrow-left$$
+      t: Prew App
+    "&kp LS(GRAVE)":
+      s: $$tabler:arrow-autofit-left$$
       t: Prew App
     "&esc":
       t: Esc
@@ -209,10 +220,10 @@ parse_config:
       t: OUT USB
     "&bootloader": boot
     "&sys_reset": reset
-    "&hmr LCTRL LG(LC(LEFT))":
+    "&hmr LCTRL LG(LS(LEFT))":
       t: ⭠🖳 Desk
       h: Ctrl
-    "&hmr LALT LG(LC(RIGHT))":
+    "&hmr LALT LG(LS(RIGHT))":
       t: 🖳⭢ Desk
       h: Alt
     "&kp LG(LC(LS(Q)))": Pin Win
@@ -458,9 +469,15 @@ parse_config:
     DEL: ⌦
     BACKSPACE: ⌫
     BSPC: ⌫
-    RET: ⏎
+    RET: $$ret_icon$$
+    # RET: ⏎
     ESC: ESC
-    TAB: ⭲
+    TAB: TAB
+    CLCK: CAPS
+    CAPS: CAPS
+    SLCK: Scroll Lock
+    PSCRN: Print Screen
+    PAUSE_BREAK: Pause Break
     N1:
       s: "!"
       t: "1"
