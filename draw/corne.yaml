@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   Base:
   - - {t: '$$tabler:typography$$', h: RUS, s: '$$tabler:alphabet-cyrillic$$'}
@@ -45,11 +45,11 @@ layers:
     - Smart Mouse
   Diktor:
   - - {type: trans}
-    - Ф
-    - Ь
-    - Х
-    - Я
+    - Ъ
     - Ы
+    - А
+    - Я
+    - Ф
     - З
     - В
     - К
@@ -61,7 +61,7 @@ layers:
     - {t: И, h: Alt}
     - {t: Е, h: Shift}
     - {t: О, h: Ctrl}
-    - А
+    - Х
     - Л
     - {t: Н, h: Ctrl}
     - {t: Т, h: Shift}
@@ -69,8 +69,8 @@ layers:
     - {t: Р, h: Gui}
     - Ш
   - - {type: trans}
+    - Ь
     - Й
-    - Ъ
     - Э
     - Ю
     - Ц
