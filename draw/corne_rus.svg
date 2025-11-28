@@ -316,13 +316,16 @@ text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 
 }
-rect.key { fill: #f6f8fa; stroke: #c9cccf; stroke-width: 1;}
-rect.held, rect.combo.held { fill: #fdd;}
+svg.keymap { font-size: 14px; fill: #11161b; background-color: #303030;}
+text.label, text.footer { stroke: none; fill: #e0f0f0;}
+rect.key { fill: #d6d8da; stroke: #999c9f; stroke-width: 1;}
+rect.held, rect.combo.held { fill: #854747; }
 rect.ghost, rect.combo.ghost { fill: #ddd; stroke-dasharray: none; stroke-width: 1;}
 rect.thumb, rect.combo.thumb { fill: #303030; stroke-width: 0;}
-svg.keymap { font-size: 14px; background-color: #303030;}
-text.label { stroke: none; fill: #e0f0f0;}
-
+rect.combo, rect.combo-separate { fill: #ccd5cd; }
+rect.combo { stroke: #60666c; }
+path.combo { stroke: #4c65bd; }
+text.trans { fill: #7e8184; }
 /* styling for combo tap, and key hold/shifted label text */
 text.combo, text.hold, text.shifted {
     font-size: 11px;
