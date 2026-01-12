@@ -234,7 +234,7 @@ ZMK_MOD_MORPH(rus_toggle,
     bindings = <&lang_macro>, <&tog RUS>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
-// Macro for Russian layer toggle (my DICTOR version layout)
+// Macro for Russian layer toggle (my DIKTOR version layout)
 // Win+SPACE &tog RUS
 ZMK_MACRO(lang_macro,
     wait-ms = <2>;
